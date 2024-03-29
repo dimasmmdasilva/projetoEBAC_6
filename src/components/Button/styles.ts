@@ -9,11 +9,6 @@ export const ButtonContainer = styled.div`
 `
 
 export const ButtonCard = styled.button`
-  border: 2px solid ${colors.salmon_light};
-  color: ${colors.white};
-  background-color: ${colors.salmon_light};
-  font-size: 14px;
-  font-weight: bold;
   width: 82px;
   height: 24px;
 `

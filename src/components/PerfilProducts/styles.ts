@@ -13,7 +13,7 @@ export const Card = styled.div`
 
   img {
     width: 100%;
-    height: 400px;
+    height: 300px;
   }
 `
 

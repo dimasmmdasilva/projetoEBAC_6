@@ -1,4 +1,5 @@
-import ProductsList from '../../components/ProductsList'
+import Banner from '../../components/Banner'
+import Footer from '../../components/Footer'
 import Options from '../../models/Options'
 import taco from '../../assets/images/taco.jpg'
 import japanese from '../../assets/images/japanese.jpg'
@@ -6,8 +7,8 @@ import brazilian from '../../assets/images/arroz_feijao.jpg'
 import italian from '../../assets/images/italian.jpg'
 import mediterranean from '../../assets/images/mediterranean.jpg'
 import american from '../../assets/images/hamburger.jpg'
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
+import PerfilProductsList from '../../components/PerfilProductsList'
+import PerfilHeader from '../../components/PerfilHeader'
 
 const restaurants: Options[] = [
   {
@@ -60,12 +61,15 @@ const restaurants: Options[] = [
   }
 ]
 
-const Home = () => (
-  <>
-    <Header />
-    <ProductsList options={restaurants} />
-    <Footer />
-  </>
-)
+export const Perfil = () => {
+  return (
+    <>
+      <PerfilHeader />
+      <Banner />
+      <PerfilProductsList options={restaurants} />
+      <Footer />
+    </>
+  )
+}
 
-export default Home
+export default Perfil

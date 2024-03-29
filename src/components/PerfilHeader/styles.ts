@@ -1,25 +1,18 @@
 import styled from 'styled-components'
 import { colors } from '../../styles'
 
-export const HeaderBar = styled.header`
+export const PerfilHeaderBar = styled.header`
   background-color: ${colors.beige_dark};
-  height: 300px;
+  height: 200px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-`
-
-export const HeaderTitle = styled.h2`
-  margin-left: 100px;
-  margin-right: 100px;
-  text-align: center;
-  font-family:;
 `
 export const LogoImage = styled.img`
-  width: 150px;
+  width: 100px;
   margin-top: 24px;
   margin-bottom: 24px;
-  margin: auto;
+  margin-right: 12%;
+  margin-left: 12%;
 `

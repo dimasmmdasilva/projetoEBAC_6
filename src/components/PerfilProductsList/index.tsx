@@ -1,5 +1,5 @@
 import Options from '../../models/Options'
-import Product from '../Product'
+import PerfilProducts from '../PerfilProducts'
 
 import { Container, List } from './styles'
 
@@ -7,11 +7,11 @@ export type Props = {
   options: Options[]
 }
 
-export const ProductsList = ({ options }: Props) => (
+export const PerfilList = ({ options }: Props) => (
   <Container>
     <List>
       {options.map((option) => (
-        <Product
+        <PerfilProducts
           key={option.id}
           title={option.title}
           category={option.category}
@@ -24,4 +24,4 @@ export const ProductsList = ({ options }: Props) => (
   </Container>
 )
 
-export default ProductsList
+export default PerfilList

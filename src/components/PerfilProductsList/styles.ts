@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
 export const Container = styled.section`
-  padding: 20px 0;
+  padding: 10px 0;
 `
 
 export const List = styled.ul`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 0px;
   margin-top: 40px;
 `
