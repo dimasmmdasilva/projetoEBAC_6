@@ -16,10 +16,17 @@ export const ButtonLink = styled(Link)`
   border: 2px solid ${colors.salmon_light};
   color: ${colors.white};
   background-color: ${colors.salmon_light};
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   padding: 8px 16px;
   min-width: 100px;
   height: auto;
   text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+
+  &:hover {
+    background-color: ${colors.white};
+    border: 2px solid ${colors.salmon_soft};
+    color: ${colors.salmon_light};
+  }
 `

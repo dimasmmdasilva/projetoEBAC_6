@@ -1,5 +1,5 @@
 import Options from '../../models/Options'
-import PerfilProducts from '../PerfilProducts'
+import PerfilProduct from '../PerfilProduct'
 
 import { Container, List } from './styles'
 
@@ -11,7 +11,7 @@ export const PerfilList = ({ options }: Props) => (
   <Container>
     <List>
       {options.map((option) => (
-        <PerfilProducts
+        <PerfilProduct
           key={option.id}
           title={option.title}
           category={option.category}

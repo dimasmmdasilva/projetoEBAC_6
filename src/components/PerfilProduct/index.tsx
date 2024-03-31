@@ -1,7 +1,6 @@
 import ButtonCard from '../Button'
 import { ButtonContainer } from '../Button/styles'
-import Tag from '../Tag'
-import { Card, Title, Description, Infos } from './styles'
+import { Card, Title, Description } from './styles'
 
 type Props = {
   title: string
@@ -11,21 +10,9 @@ type Props = {
   infos: string[]
 }
 
-export const Product = ({
-  title,
-  category,
-  image,
-  description,
-  infos
-}: Props) => (
+export const PerfilProduct = ({ title, image, description }: Props) => (
   <Card>
     <img src={image} />
-    <Infos>
-      <Tag>{category}</Tag>
-      {infos.map((info) => (
-        <Tag key={info}>{info}</Tag>
-      ))}
-    </Infos>
     <Title>{title}</Title>
     <Description>{description}</Description>
     <ButtonContainer>
@@ -36,4 +23,4 @@ export const Product = ({
   </Card>
 )
 
-export default Product
+export default PerfilProduct

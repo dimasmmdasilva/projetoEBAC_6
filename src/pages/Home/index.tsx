@@ -22,7 +22,7 @@ const restaurants: Options[] = [
     id: 2,
     title: 'Tokyo Sushi',
     category: 'Japanese',
-    description: 'Direatamente do Japão agora no Brasil...',
+    description: 'Do coração do Japão para o Brasil...',
     infos: ['Novo'],
     image: japanese
   },

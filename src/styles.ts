@@ -2,8 +2,9 @@ import styled, { createGlobalStyle } from 'styled-components'
 
 export const colors = {
   beige_dark: '#FFEBD9',
-  beige_light: '#FFF8F2',
+  beige_light: '#FFFBE9',
   salmon_light: '#E66767',
+  salmon_soft: '#E99999',
   white: '#FFFFFF'
 }
 

@@ -24,6 +24,7 @@ export const Title = styled.h4`
   margin-top: 16px;
   margin-bottom: 8px;
   margin-left: 12px;
+  font-family: 'Quicksand', sans-serif;
 `
 
 export const Description = styled.p`
@@ -32,6 +33,7 @@ export const Description = styled.p`
   display: block;
   margin-top: 16px;
   margin-left: 12px;
+  font-family: 'Quicksand', sans-serif;
 `
 
 export const Infos = styled.div`

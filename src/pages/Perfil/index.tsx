@@ -7,10 +7,10 @@ import brazilian from '../../assets/images/arroz_feijao.jpg'
 import italian from '../../assets/images/italian.jpg'
 import mediterranean from '../../assets/images/mediterranean.jpg'
 import american from '../../assets/images/hamburger.jpg'
-import PerfilProductsList from '../../components/PerfilProductsList'
+import { PerfilList } from '../../components/PerfilProductsList'
 import PerfilHeader from '../../components/PerfilHeader'
 
-const restaurants: Options[] = [
+const menu: Options[] = [
   {
     id: 1,
     title: 'Labrabada Tacos',
@@ -66,7 +66,7 @@ export const Perfil = () => {
     <>
       <PerfilHeader />
       <Banner />
-      <PerfilProductsList options={restaurants} />
+      <PerfilList options={menu} />
       <Footer />
     </>
   )

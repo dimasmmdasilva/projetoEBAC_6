@@ -15,7 +15,7 @@ export const HeaderTitle = styled.h2`
   margin-left: 100px;
   margin-right: 100px;
   text-align: center;
-  font-family:;
+  font-family: 'DM Sans', sans-serif;
 `
 export const LogoImage = styled.img`
   width: 150px;

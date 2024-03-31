@@ -28,15 +28,17 @@ export const BackgroundImage = styled.div`
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
-    margin-left: 24px;
+    margin-left: 240px;
   }
 `
 
 export const TitleImage = styled.h3`
   font-size: 24px;
   font-weight: lighter;
+  font-family: 'DM Sans', sans-serif;
 `
 export const TitleRestaurant = styled.h2`
   font-size: 24px;
   font-weight: bold;
+  font-family: 'DM Sans', sans-serif;
 `
