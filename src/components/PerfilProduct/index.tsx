@@ -1,5 +1,4 @@
-import ButtonCard from '../Button'
-import { ButtonContainer } from '../Button/styles'
+import { PerfilButtonCard, PerfilButtonContainer } from '../PerfilButton/styles'
 import { Card, Title, Description } from './styles'
 
 type Props = {
@@ -15,11 +14,9 @@ export const PerfilProduct = ({ title, image, description }: Props) => (
     <img src={image} />
     <Title>{title}</Title>
     <Description>{description}</Description>
-    <ButtonContainer>
-      <ButtonCard type="link" title="Clique aqui para saber mais">
-        Saber mais
-      </ButtonCard>
-    </ButtonContainer>
+    <PerfilButtonContainer>
+      <PerfilButtonCard title="Comprar">Adicionar ao carrinho</PerfilButtonCard>
+    </PerfilButtonContainer>
   </Card>
 )
 
