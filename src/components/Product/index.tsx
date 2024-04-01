@@ -30,7 +30,7 @@ export const Product = ({
     <Description>{description}</Description>
     <ButtonContainer>
       <ButtonCard type="link" to="/perfil" title="Clique aqui para saber mais">
-        Saber mais
+        Saiba mais
       </ButtonCard>
     </ButtonContainer>
   </Card>
