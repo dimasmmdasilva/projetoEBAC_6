@@ -21,7 +21,7 @@ export const PerfilButtonCard = styled.button`
   cursor: pointer;
 
   &:hover {
-    background-color: ${colors.salmon_soft};
+    background-color: ${colors.salmon_light};
     border: 2px solid ${colors.white};
     color: ${colors.white};
 `

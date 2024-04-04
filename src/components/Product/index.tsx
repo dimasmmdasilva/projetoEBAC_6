@@ -1,3 +1,4 @@
+import { Container } from '../../styles'
 import ButtonCard from '../Button'
 import { ButtonContainer } from '../Button/styles'
 import Tag from '../Tag'
@@ -18,22 +19,28 @@ export const Product = ({
   description,
   infos
 }: Props) => (
-  <Card>
-    <img src={image} />
-    <Infos>
-      <Tag>{category}</Tag>
-      {infos.map((info) => (
-        <Tag key={info}>{info}</Tag>
-      ))}
-    </Infos>
-    <Title>{title}</Title>
-    <Description>{description}</Description>
-    <ButtonContainer>
-      <ButtonCard type="link" to="/perfil" title="Clique aqui para saber mais">
-        Saber mais
-      </ButtonCard>
-    </ButtonContainer>
-  </Card>
+  <Container>
+    <Card>
+      <img src={image} />
+      <Infos>
+        <Tag>{category}</Tag>
+        {infos.map((info) => (
+          <Tag key={info}>{info}</Tag>
+        ))}
+      </Infos>
+      <Title>{title}</Title>
+      <Description>{description}</Description>
+      <ButtonContainer>
+        <ButtonCard
+          type="link"
+          to="/perfil"
+          title="Clique aqui para saber mais"
+        >
+          Saber mais
+        </ButtonCard>
+      </ButtonContainer>
+    </Card>
+  </Container>
 )
 
 export default Product

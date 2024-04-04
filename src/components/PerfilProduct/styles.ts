@@ -2,19 +2,16 @@ import styled from 'styled-components'
 import { colors } from '../../styles'
 
 export const Card = styled.div`
-  border: 1px solid ${colors.salmon_light};
-  background-color: ${colors.salmon_light};
+  border: 3px solid ${colors.salmon_soft};
+  background-color: ${colors.salmon_soft};
   border-radius: 8px;
   padding: 8px;
   margin-bottom: 48px;
-  margin-right: 24px;
-  margin-left: 24px;
+  max-width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  height: auto;
   position: relative;
-
-  img {
-    width: 100%;
-    height: 300px;
-  }
 `
 
 export const Title = styled.h4`

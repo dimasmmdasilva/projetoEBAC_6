@@ -7,13 +7,15 @@ export const Card = styled.div`
   border-radius: 8px;
   padding: 8px;
   margin-bottom: 48px;
-  margin-right: 24px;
-  margin-left: 24px;
+  margin-right: 5%;
+  margin-left: 5%;
   position: relative;
+  max-width: 80%;
 
   img {
     width: 100%;
-    height: 400px;
+    height: 350px;
+    object-fit: cover;
   }
 `
 
