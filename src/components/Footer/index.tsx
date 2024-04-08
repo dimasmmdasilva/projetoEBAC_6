@@ -1,10 +1,8 @@
 import logo from '../../assets/images/logo.png'
-import FooterContainer, { FooterLogo, Links } from './styles'
-import instagram from '../../assets/images/instagram.jpeg'
-import whatsapp from '../../assets/images/whatsapp.jpeg'
-import facebook from '../../assets/images/facebook.jpeg'
-
-const currentYear = new Date().getFullYear()
+import FooterContainer, { FooterInfo, FooterLogo, Links } from './styles'
+import instagram from '../../assets/images/instagram.png'
+import twitter from '../../assets/images/twitter.png'
+import facebook from '../../assets/images/facebook.png'
 
 const Footer = () => (
   <FooterContainer>
@@ -14,11 +12,13 @@ const Footer = () => (
     <Links>
       <img src={instagram} alt="INSTAGRAM" />
       <img src={facebook} alt="FACEBOOK" />
-      <img src={whatsapp} alt="WHATSAPP" />
+      <img src={twitter} alt="TWITTER" />
     </Links>
-    <div>
-      <p>{currentYear} - &copy; Gastronomia Especial do Chef</p>
-    </div>
+    <FooterInfo>
+      A efood é uma FooterInfolataforma para divulgação de estabelecimentos, a
+      responsabilidade pela entrega, qualidade dos produtos é toda do
+      estabelFooterInfocimento contratado.
+    </FooterInfo>
   </FooterContainer>
 )
 

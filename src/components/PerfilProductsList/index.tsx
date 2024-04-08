@@ -1,14 +1,14 @@
 import Options from '../../models/Options'
 import PerfilProduct from '../PerfilProduct'
 
-import { Container, List } from './styles'
+import { PerfilContainer, List } from './styles'
 
 export type Props = {
   options: Options[]
 }
 
 export const PerfilList = ({ options }: Props) => (
-  <Container>
+  <PerfilContainer>
     <List>
       {options.map((option) => (
         <PerfilProduct
@@ -21,7 +21,7 @@ export const PerfilList = ({ options }: Props) => (
         />
       ))}
     </List>
-  </Container>
+  </PerfilContainer>
 )
 
 export default PerfilList

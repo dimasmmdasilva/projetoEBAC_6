@@ -18,6 +18,7 @@ export const ProductsList = ({ options }: Props) => (
           image={option.image}
           description={option.description}
           infos={option.infos}
+          grade={option.grade}
         />
       ))}
     </List>

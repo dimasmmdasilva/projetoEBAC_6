@@ -1,8 +1,9 @@
-import { Container } from '../../styles'
+import { CardContainer, Grade, InfoContainer, StarImage } from './styles'
 import ButtonCard from '../Button'
 import { ButtonContainer } from '../Button/styles'
 import Tag from '../Tag'
-import { Card, Title, Description, Infos } from './styles'
+import { Title, Description, Infos, CardInfo, Img } from './styles'
+import star from '../../assets/images/star.png'
 
 type Props = {
   title: string
@@ -10,6 +11,7 @@ type Props = {
   image: string
   description: string
   infos: string[]
+  grade: string
 }
 
 export const Product = ({
@@ -17,18 +19,23 @@ export const Product = ({
   category,
   image,
   description,
-  infos
+  infos,
+  grade
 }: Props) => (
-  <Container>
-    <Card>
-      <img src={image} />
-      <Infos>
-        <Tag>{category}</Tag>
-        {infos.map((info) => (
-          <Tag key={info}>{info}</Tag>
-        ))}
-      </Infos>
-      <Title>{title}</Title>
+  <CardContainer>
+    <Img src={image} />
+    <Infos>
+      <Tag>{category}</Tag>
+      {infos.map((info) => (
+        <Tag key={info}>{info}</Tag>
+      ))}
+    </Infos>
+    <CardInfo>
+      <InfoContainer>
+        <Title>{title}</Title>
+        <Grade>{grade}</Grade>
+        <StarImage src={star} alt="Star" />
+      </InfoContainer>
       <Description>{description}</Description>
       <ButtonContainer>
         <ButtonCard
@@ -36,11 +43,11 @@ export const Product = ({
           to="/perfil"
           title="Clique aqui para saber mais"
         >
-          Saber mais
+          Saiba mais
         </ButtonCard>
       </ButtonContainer>
-    </Card>
-  </Container>
+    </CardInfo>
+  </CardContainer>
 )
 
 export default Product

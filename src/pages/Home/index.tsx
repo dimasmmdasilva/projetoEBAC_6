@@ -14,49 +14,61 @@ const restaurants: Options[] = [
     id: 1,
     title: 'Labrabada Tacos',
     category: 'Mexican',
-    description: 'La mejor comida mexicana agora no Brasil...',
+    description:
+      'Desfrute dos sabores autênticos do México com os nossos tacos frescos, burritos suculentos e guacamole caseiro.',
     infos: ['Destaque'],
-    image: taco
+    image: taco,
+    grade: '4.5'
   },
   {
     id: 2,
     title: 'Tokyo Sushi',
     category: 'Japanese',
-    description: 'Do coração do Japão para o Brasil...',
+    description:
+      'Experimente a autêntica culinária japonesa com os nossos sushis, sashimis e pratos quentes tradicionais.',
     infos: ['Novo'],
-    image: japanese
+    image: japanese,
+    grade: '4.6'
   },
   {
     id: 3,
     title: 'Lá da Roça',
     category: 'Brazilian',
-    description: 'Comida da roça é bão demais é do Brasil...',
+    description:
+      'Saboreie os pratos típicos da culinária brasileira em um ambiente acolhedor e familiar. De feijão tropeiro a moqueca de peixe, temos algo para todos os gostos!',
     infos: ['Tradicional'],
-    image: brazilian
+    image: brazilian,
+    grade: '4.8'
   },
   {
     id: 4,
     title: 'MammaMia',
     category: 'Italian',
-    description: 'As melhores refeições italianas agora no Brasil...',
+    description:
+      'Delicie-se com os sabores autênticos da Itália em nosso restaurante. Desde pizzas crocantes até massas frescas e risotos cremosos, cada prato é preparado com ingredientes de alta qualidade e paixão!',
     infos: ['Destaque'],
-    image: italian
+    image: italian,
+    grade: '4.7'
   },
   {
     id: 5,
     title: 'The Best',
     category: 'American',
-    description: 'Os melhores hamburgueres chegaram no Brasil...',
+    description:
+      'Prepare-se para uma explosão de sabor com os nossos hambúrgueres gourmet. Carnes suculentas, queijos derretidos e acompanhamentos frescos garantem uma experiência americana autêntica!',
     infos: ['Especial'],
-    image: american
+    image: american,
+    grade: '4.8'
   },
   {
     id: 6,
     title: 'Pura Vita',
     category: 'Mediterranean',
-    description: 'A comida Mediterrânea agora no Brasil...',
+    description:
+      'Descubra os sabores vibrantes e saudáveis da cozinha mediterrânea em nosso restaurante. De falafel crocante a saladas frescas e pratos de frutos do mar, nossa culinária é uma celebração da vida pura!',
     infos: ['Novo'],
-    image: mediterranean
+    image: mediterranean,
+    grade: '4.9'
   }
 ]
 

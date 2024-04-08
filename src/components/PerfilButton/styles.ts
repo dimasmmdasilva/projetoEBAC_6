@@ -2,23 +2,26 @@ import styled from 'styled-components'
 import { colors } from '../../styles'
 
 export const PerfilButtonContainer = styled.div`
-  margin-left: 12px;
-  margin-top: 24px;
-  margin-bottom: 12px;
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
 `
 
 export const PerfilButtonCard = styled.button`
   border: 2px solid ${colors.beige_light};
   color: ${colors.salmon_light};
-  background-color: ${colors.beige_light};
-  font-size: 12px;
-  font-weight: bold;
-  padding: 8px 16px;
-  min-width: 100px;
-  height: auto;
+  background-color: ${colors.beige_dark};
+  font-family: 'Roboto', sans-serif;
+  padding: 4px;
+  height: 24px;
+  width: 304px;
   text-decoration: none;
-  font-family: 'Quicksand', sans-serif;
   cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  text-align: center;
 
   &:hover {
     background-color: ${colors.salmon_light};

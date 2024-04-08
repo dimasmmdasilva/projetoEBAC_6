@@ -3,21 +3,18 @@ import { colors } from '../../styles'
 
 export const FooterContainer = styled.footer`
   background-color: ${colors.beige_dark};
-  padding: 42px 0;
-
-  p {
-    font-weight: bold;
-    font-size: 22px;
-    text-align: center;
-    margin-top: 32px;
-  }
+  padding: 52px 0;
+  height: 298px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 `
 
 export const FooterLogo = styled.div`
   display: flex;
-  justify-content: center;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  align-items: center;
+  margin-left: 28px;
 
   img {
     width: 100px;
@@ -26,14 +23,25 @@ export const FooterLogo = styled.div`
 
 export const Links = styled.ul`
   display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
   justify-content: center;
+  align-items: center; /* Alinha verticalmente com o Logo */
+  margin-bottom: 100px;
 
   img {
-    width: 40px;
-    margin-right: 24px;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
   }
+`
+
+export const FooterInfo = styled.p`
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 11.72px;
+  text-align: center;
+  max-width: 480px;
+  color: ${colors.salmon_light};
 `
 
 export default FooterContainer

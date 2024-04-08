@@ -3,26 +3,29 @@ import { Link } from 'react-router-dom'
 import { colors } from '../../styles'
 
 export const ButtonContainer = styled.div`
-  margin-left: 12px;
-  margin-top: 24px;
-  margin-bottom: 12px;
+  position: absolute;
+  bottom: 12px;
+  left: 8px;
 `
 
 export const ButtonCard = styled.button`
   width: 82px;
   height: 24px;
 `
+
 export const ButtonLink = styled(Link)`
   border: 2px solid ${colors.salmon_light};
-  color: ${colors.white};
+  color: ${colors.beige_dark};
   background-color: ${colors.salmon_light};
-  font-size: 12px;
-  font-weight: bold;
-  padding: 8px 16px;
-  min-width: 100px;
-  height: auto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  text-align: center;
   text-decoration: none;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  width: 70px;
+  height: 16px;
+  padding: 4px;
 
   &:hover {
     background-color: ${colors.white};

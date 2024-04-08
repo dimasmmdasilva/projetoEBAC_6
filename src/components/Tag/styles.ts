@@ -3,11 +3,15 @@ import { colors } from '../../styles'
 
 export const TagCards = styled.div`
   background-color: ${colors.salmon_light};
-  color: ${colors.white};
-  font-size: 10px;
-  font-weight: bold;
-  padding: 4px 6px;
+  color: ${colors.beige_dark};
+  padding: 6px;
   display: inline-block;
   margin-right: 8px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Roboto', sans-serif;
+
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.06px;
+  text-align: center;
 `

@@ -17,7 +17,7 @@ export const PerfilProduct = ({ title, description, image }: Props) => (
       <Title>{title}</Title>
       <Description>{description}</Description>
       <PerfilButtonContainer>
-        <PerfilButtonCard title="Comprar">
+        <PerfilButtonCard title="Adicionar">
           Adicionar ao carrinho
         </PerfilButtonCard>
       </PerfilButtonContainer>

@@ -5,6 +5,7 @@ class Options {
   description: string
   infos: string[]
   id: number
+  grade: string
 
   constructor(
     title: string,
@@ -12,7 +13,8 @@ class Options {
     image: string,
     description: string,
     infos: string[],
-    id: number
+    id: number,
+    grade: string
   ) {
     this.title = title
     this.category = category
@@ -20,6 +22,7 @@ class Options {
     this.description = description
     this.infos = infos
     this.id = id
+    this.grade = grade
   }
 }
 

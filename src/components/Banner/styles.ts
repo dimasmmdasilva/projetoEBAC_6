@@ -33,12 +33,16 @@ export const BackgroundImage = styled.div`
 `
 
 export const TitleImage = styled.h3`
-  font-size: 24px;
-  font-weight: lighter;
-  font-family: 'DM Sans', sans-serif;
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 100;
+  line-height: 37.5px;
+  text-align: left;
 `
 export const TitleRestaurant = styled.h2`
-  font-size: 24px;
-  font-weight: bold;
-  font-family: 'DM Sans', sans-serif;
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 37.5px;
+  text-align: left;
 `
