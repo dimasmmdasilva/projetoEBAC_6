@@ -14,4 +14,5 @@ export const List = styled.ul`
   grid-template-columns: repeat(2, 1fr);
   gap: 80px;
   margin-top: 50px;
+  justify-content: center;
 `
