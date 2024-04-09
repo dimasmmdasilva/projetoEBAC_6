@@ -38,11 +38,7 @@ export const Product = ({
       </InfoContainer>
       <Description>{description}</Description>
       <ButtonContainer>
-        <ButtonCard
-          type="link"
-          to="/perfil"
-          title="Clique aqui para saber mais"
-        >
+        <ButtonCard type="link" to="/perfil" title="Clique para saber mais">
           Saiba mais
         </ButtonCard>
       </ButtonContainer>
