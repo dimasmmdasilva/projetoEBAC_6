@@ -13,5 +13,6 @@ export const List = styled.ul`
   grid-template-columns: repeat(2, 1fr);
   gap: 80px;
   margin-top: 70px;
+  margin-bottom: 120px;
   justify-content: center;
 `
