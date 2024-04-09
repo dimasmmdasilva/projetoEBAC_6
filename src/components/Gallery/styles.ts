@@ -19,8 +19,8 @@ export const ImageMenu = styled.div`
   overflow: hidden;
   width: 100%;
   height: 167px;
-  border-radius: 4px;
-  margin-bottom: 8px;
+  border-radius: 0px;
+  margin-bottom: 4px;
 
   &:hover ${Action} {
     opacity: 1;

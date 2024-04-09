@@ -1,74 +1,70 @@
 import ProductsList from '../../components/ProductsList'
 import Options from '../../models/Options'
-import taco from '../../assets/images/taco.jpg'
-import japanese from '../../assets/images/japanese.jpg'
-import brazilian from '../../assets/images/arroz_feijao.jpg'
-import italian from '../../assets/images/italian.jpg'
-import mediterranean from '../../assets/images/mediterranean.jpg'
-import american from '../../assets/images/hamburger.jpg'
+import sushiefood from '../../assets/images/sushiefood.jpg'
+import italianefood from '../../assets/images/macarraoefood.jpg'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
 const restaurants: Options[] = [
   {
     id: 1,
-    title: 'Labrabada Tacos',
-    category: 'Mexican',
+    title: 'Hioki Sushi',
+    category: 'Japonesa',
     description:
-      'Desfrute dos sabores autênticos do México com os nossos tacos frescos, burritos suculentos e guacamole caseiro.',
-    infos: ['Destaque'],
-    image: taco,
-    grade: '4.5'
+      'Peça já o melhor da culinária japonesa no conforto da sua casa! Sushis frescos, sashimis deliciosos e pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida. Experimente o Japão sem sair do lar com nosso delivery!',
+    infos: ['Destaque da semana'],
+    image: sushiefood,
+    grade: '4.9'
   },
   {
     id: 2,
-    title: 'Tokyo Sushi',
-    category: 'Japanese',
+    title: 'La Dolce Vita Trattoria',
+    category: 'Italiana',
     description:
-      'Experimente a autêntica culinária japonesa com os nossos sushis, sashimis e pratos quentes tradicionais.',
-    infos: ['Novo'],
-    image: japanese,
+      'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
+    infos: [],
+    image: italianefood,
     grade: '4.6'
   },
   {
-    id: 3,
-    title: 'Lá da Roça',
-    category: 'Brazilian',
+    id: 2,
+    title: 'La Dolce Vita Trattoria',
+    category: 'Italiana',
     description:
-      'Saboreie os pratos típicos da culinária brasileira em um ambiente acolhedor e familiar. De feijão tropeiro a moqueca de peixe, temos algo para todos os gostos!',
-    infos: ['Tradicional'],
-    image: brazilian,
-    grade: '4.8'
+      'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
+    infos: [],
+    image: italianefood,
+    grade: '4.6'
   },
   {
-    id: 4,
-    title: 'MammaMia',
-    category: 'Italian',
+    id: 2,
+    title: 'La Dolce Vita Trattoria',
+    category: 'Italiana',
     description:
-      'Delicie-se com os sabores autênticos da Itália em nosso restaurante. Desde pizzas crocantes até massas frescas e risotos cremosos, cada prato é preparado com ingredientes de alta qualidade e paixão!',
-    infos: ['Destaque'],
-    image: italian,
-    grade: '4.7'
+      'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
+    infos: [],
+    image: italianefood,
+    grade: '4.6'
   },
   {
-    id: 5,
-    title: 'The Best',
-    category: 'American',
+    id: 2,
+    title: 'La Dolce Vita Trattoria',
+    category: 'Italiana',
     description:
-      'Prepare-se para uma explosão de sabor com os nossos hambúrgueres gourmet. Carnes suculentas, queijos derretidos e acompanhamentos frescos garantem uma experiência americana autêntica!',
-    infos: ['Especial'],
-    image: american,
-    grade: '4.8'
+      'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
+    infos: [],
+    image: italianefood,
+    grade: '4.6'
   },
   {
-    id: 6,
-    title: 'Pura Vita',
-    category: 'Mediterranean',
+    id: 2,
+    title: 'La Dolce Vita Trattoria',
+    category: 'Italiana',
     description:
-      'Descubra os sabores vibrantes e saudáveis da cozinha mediterrânea em nosso restaurante. De falafel crocante a saladas frescas e pratos de frutos do mar, nossa culinária é uma celebração da vida pura!',
-    infos: ['Novo'],
-    image: mediterranean,
-    grade: '4.9'
+      'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
+    infos: [],
+    image: italianefood,
+    grade: '4.6'
   }
 ]
 

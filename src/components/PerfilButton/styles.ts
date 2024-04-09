@@ -3,9 +3,7 @@ import { colors } from '../../styles'
 
 export const PerfilButtonContainer = styled.div`
   position: absolute;
-  bottom: 16px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 8px;
 `
 
 export const PerfilButtonCard = styled.button`
@@ -15,7 +13,7 @@ export const PerfilButtonCard = styled.button`
   font-family: 'Roboto', sans-serif;
   padding: 4px;
   height: 24px;
-  width: 304px;
+  width: 316px;
   text-decoration: none;
   cursor: pointer;
   font-size: 14px;

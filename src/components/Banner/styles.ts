@@ -4,7 +4,7 @@ import { colors } from '../../styles'
 export const BackgroundImage = styled.div`
   position: relative;
   width: 100%;
-  height: 450px;
+  height: 280px;
   display: block;
   background-repeat: no-repeat;
   background-size: cover;

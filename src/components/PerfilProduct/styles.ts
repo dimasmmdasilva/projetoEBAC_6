@@ -3,7 +3,7 @@ import { colors } from '../../styles'
 
 export const Card = styled.div`
   background-color: ${colors.salmon_light};
-  border-radius: 8px;
+  border-radius: 0px;
   padding: 8px;
   width: 320px;
   height: 338px;
@@ -17,15 +17,14 @@ export const Card = styled.div`
 `
 
 export const Title = styled.h4`
-  color: ${colors.beige_light};
+  color: ${colors.beige_dark};
   font-weight: bold;
   display: block;
-  margin-top: 8px;
+  margin-top: 12px;
   margin-bottom: 8px;
   margin-left: 4px;
   font-family: 'Roboto', sans-serif;
 
-  font-family: Roboto;
   font-size: 16px;
   font-weight: 900;
   line-height: 18.75px;
@@ -33,14 +32,15 @@ export const Title = styled.h4`
 `
 
 export const Description = styled.p`
-  color: ${colors.beige_light};
+  color: ${colors.beige_dark};
   display: block;
   margin-top: 8px;
   margin-left: 4px;
+  margin-bottom: 8px;
   font-family: 'Roboto', sans-serif;
-
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
   text-align: left;
+  width: 240px;
 `

@@ -4,8 +4,8 @@ import italian from '../../assets/images/italian_banner.jpg'
 const Banner = () => (
   <BackgroundImage style={{ backgroundImage: `url(${italian})` }}>
     <div className="container">
-      <TitleImage>Categoria</TitleImage>
-      <TitleRestaurant>Restaurante</TitleRestaurant>
+      <TitleImage>Italiana</TitleImage>
+      <TitleRestaurant>La Dolce Vita Trattoria</TitleRestaurant>
     </div>
   </BackgroundImage>
 )
