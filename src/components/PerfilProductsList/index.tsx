@@ -13,21 +13,18 @@ const PerfilList: React.FC<PerfilListProps> = ({ restaurant }) => {
 
   return (
     <PerfilContainer>
-      <h2>{restaurant.titulo}</h2>
       <List>
-        <ul>
-          {restaurant.cardapio.map((menuItem: MenuItem) => (
-            <PerfilProduct
-              key={menuItem.id}
-              nome={menuItem.nome}
-              descricao={menuItem.descricao}
-              preco={menuItem.preco}
-              porcao={menuItem.porcao}
-              foto={menuItem.foto}
-              avaliacao={restaurant.avaliacao}
-            />
-          ))}
-        </ul>
+        {restaurant.cardapio.map((menuItem: MenuItem) => (
+          <PerfilProduct
+            key={menuItem.id}
+            nome={menuItem.nome}
+            descricao={menuItem.descricao}
+            preco={menuItem.preco}
+            porcao={menuItem.porcao}
+            foto={menuItem.foto}
+            avaliacao={restaurant.avaliacao}
+          />
+        ))}
       </List>
     </PerfilContainer>
   )

@@ -1,4 +1,4 @@
-// PerfilProduct/styles.ts
+// PerfilProduct.tsx
 import styled from 'styled-components'
 import { colors } from '../../styles'
 
@@ -7,7 +7,7 @@ export const Card = styled.div`
   border-radius: 0px;
   padding: 8px;
   width: 320px;
-  height: auto;
+  height: 338px;
   margin-bottom: 48px;
   margin-right: auto;
   margin-left: auto;
@@ -20,10 +20,10 @@ export const Card = styled.div`
 export const Title = styled.h4`
   color: ${colors.beige_dark};
   font-weight: bold;
-  margin-top: 12px;
-  margin-bottom: 8px;
+  margin-top: -8px;
+  margin-bottom: 0px;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 900;
   line-height: 18.75px;
   text-align: left;
@@ -31,10 +31,11 @@ export const Title = styled.h4`
 
 export const Description = styled.p`
   color: ${colors.beige_dark};
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: -12px;
+  margin-bottom: 4px;
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  width: 300px;
+  font-size: 11px;
   font-weight: 400;
   line-height: 22px;
   text-align: left;
@@ -59,6 +60,7 @@ export const Tag = styled.span`
 
 export const Image = styled.img`
   width: 100%;
-  height: auto;
-  border-radius: 8px;
+  height: 167px;
+  border-radius: 0px;
+  object-fit: cover;
 `

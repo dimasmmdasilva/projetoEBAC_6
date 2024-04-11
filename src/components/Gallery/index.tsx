@@ -1,3 +1,4 @@
+// Gallery/index.tsx
 import { useState } from 'react'
 import {
   Action,

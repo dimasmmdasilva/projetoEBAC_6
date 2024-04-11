@@ -10,7 +10,10 @@ export const PerfilContainer = styled.section`
 
 export const List = styled.ul`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 24px;
+  grid-template-columns: repeat(
+    3,
+    320px
+  ); /* Define 3 colunas com largura fixa de 320px */
+  gap: 48px;
   justify-content: center;
 `

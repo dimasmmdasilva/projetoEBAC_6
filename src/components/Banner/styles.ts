@@ -19,7 +19,7 @@ export const BackgroundImage = styled.div`
     top: 0;
     left: 0;
     content: '';
-    opacity: 0.56;
+    opacity: 0.4;
   }
 
   .container {
@@ -34,16 +34,22 @@ export const BackgroundImage = styled.div`
 `
 
 export const TitleImage = styled.h3`
+  z-index: 2;
+  position: absolute;
   font-family: Roboto;
   font-size: 32px;
   font-weight: 100;
   line-height: 37.5px;
   text-align: left;
+  top: 0;
 `
 export const TitleRestaurant = styled.h2`
+  z-index: 2;
+  position: absolute;
   font-family: Roboto;
   font-size: 32px;
   font-weight: 900;
   line-height: 37.5px;
   text-align: left;
+  bottom: 0;
 `
