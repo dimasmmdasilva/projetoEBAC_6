@@ -6,7 +6,7 @@ import { Description, Infos, CardInfo, Img, Title, Tag } from './styles'
 import star from '../../assets/images/star.png'
 
 interface ProductProps {
-  id: string // Alteração aqui
+  id: string
   nome: string
   descricao: string
   foto: string

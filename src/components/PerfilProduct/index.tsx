@@ -1,6 +1,6 @@
 // PerfilProduct.tsx
 import React from 'react'
-import { Card, Title, Description, Infos, Tag, Image } from './styles'
+import { Card, Title, Description, Infos, Image } from './styles'
 
 type PerfilProductProps = {
   nome: string
@@ -14,16 +14,13 @@ type PerfilProductProps = {
 const PerfilProduct: React.FC<PerfilProductProps> = ({
   nome,
   descricao,
-  porcao,
   foto
 }: PerfilProductProps) => (
   <Card>
     <Image src={foto} alt={nome} />
     <Title>{nome}</Title>
     <Description>{descricao}</Description>
-    <Infos>
-      <Tag>serve {porcao}</Tag>
-    </Infos>
+    <Infos></Infos>
   </Card>
 )
 

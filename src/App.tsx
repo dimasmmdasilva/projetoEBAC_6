@@ -1,3 +1,4 @@
+// App.tsx
 import { BrowserRouter } from 'react-router-dom'
 import { GlobalStyles } from './styles'
 

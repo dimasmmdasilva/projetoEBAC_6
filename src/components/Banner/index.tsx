@@ -1,6 +1,7 @@
 // Banner.tsx
 import React from 'react'
 import { BackgroundImage, TitleImage, TitleRestaurant } from './styles'
+import { Container } from '../../styles'
 
 interface BannerProps {
   capa: string
@@ -10,10 +11,10 @@ interface BannerProps {
 
 const Banner: React.FC<BannerProps> = ({ capa, tipo, titulo }) => (
   <BackgroundImage style={{ backgroundImage: `url(${capa})` }}>
-    <div className="container">
+    <Container>
       <TitleImage>{tipo}</TitleImage>
       <TitleRestaurant>{titulo}</TitleRestaurant>
-    </div>
+    </Container>
   </BackgroundImage>
 )
 

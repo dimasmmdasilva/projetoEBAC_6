@@ -15,7 +15,10 @@ const Perfil = () => {
     if (!id) return
     fetch(`https://fake-api-tau.vercel.app/api/efood/restaurantes/${id}`)
       .then((res) => res.json())
-      .then((data) => setRestaurant(data))
+      .then((data) => {
+        console.log(data) // Verifique se os dados estão sendo carregados corretamente
+        setRestaurant(data)
+      })
       .catch((error) => console.error('Erro ao buscar os dados:', error))
   }, [id])
 
