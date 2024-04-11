@@ -1,46 +1,50 @@
+// Product.tsx
+import React from 'react'
 import { CardContainer, Grade, InfoContainer, StarImage } from './styles'
-import ButtonCard from '../Button'
-import { ButtonContainer } from '../Button/styles'
-import Tag from '../Tag'
-import { Title, Description, Infos, CardInfo, Img } from './styles'
+import { ButtonContainer, ButtonLink } from '../Button/styles'
+import { Description, Infos, CardInfo, Img, Title, Tag } from './styles'
 import star from '../../assets/images/star.png'
 
-type Props = {
-  title: string
-  category: string
-  image: string
-  description: string
-  infos: string[]
-  grade: string
+interface ProductProps {
+  id: string // Alteração aqui
+  nome: string
+  descricao: string
+  foto: string
+  avaliacao: number
+  tipo: string
+  destacado: boolean
 }
 
-export const Product = ({
-  title,
-  category,
-  image,
-  description,
-  infos,
-  grade
-}: Props) => (
+const Product: React.FC<ProductProps> = ({
+  id,
+  nome,
+  descricao,
+  foto,
+  avaliacao,
+  tipo,
+  destacado
+}) => (
   <CardContainer>
-    <Img src={image} />
+    <Img src={foto} />
     <Infos>
-      <Tag>{category}</Tag>
-      {infos.map((info) => (
-        <Tag key={info}>{info}</Tag>
-      ))}
+      <Tag>{tipo}</Tag>
+      {destacado && <Tag>destaque</Tag>}
     </Infos>
     <CardInfo>
       <InfoContainer>
-        <Title>{title}</Title>
-        <Grade>{grade}</Grade>
+        <Title>{nome}</Title>
+        <Grade>{avaliacao}</Grade>
         <StarImage src={star} alt="Star" />
       </InfoContainer>
-      <Description>{description}</Description>
+      <Description>{descricao}</Description>
       <ButtonContainer>
-        <ButtonCard type="link" to="/perfil" title="Clique para saber mais">
+        <ButtonLink
+          type="link"
+          to={`/perfil/${id}`} // Aqui estou passando o ID para a URL do perfil
+          title="Clique para saber mais"
+        >
           Saiba mais
-        </ButtonCard>
+        </ButtonLink>
       </ButtonContainer>
     </CardInfo>
   </CardContainer>

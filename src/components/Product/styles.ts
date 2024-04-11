@@ -1,3 +1,4 @@
+// Product/styles.ts
 import styled from 'styled-components'
 import { colors } from '../../styles'
 
@@ -27,11 +28,11 @@ export const CardInfo = styled.div`
 export const InfoContainer = styled.div`
   position: absolute;
   top: 8px;
-  left: 8px; /* Alterado para posicionar no canto esquerdo */
+  left: 8px;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Distribui os elementos uniformemente */
-  width: calc(100% - 16px); /* Leva em conta o padding */
+  justify-content: space-between;
+  width: calc(100% - 16px);
 `
 
 export const Title = styled.h4`
@@ -50,7 +51,7 @@ export const Grade = styled.h4`
   font-weight: 700;
   line-height: 21.09px;
   margin: 0 4px 0 8px;
-  margin-left: auto; /* Move o elemento para o canto direito */
+  margin-left: auto;
 `
 
 export const StarImage = styled.img`
@@ -61,27 +62,30 @@ export const StarImage = styled.img`
 export const Description = styled.p`
   color: ${colors.salmon_light};
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 400;
   line-height: 22px;
-  margin: 0 8px 16px 8px;
+  margin: 0 8px 8px 8px;
   position: absolute;
   top: calc(16px + 21px + 8px);
   right: 8px;
+  text-align: justify;
 `
 
 export const Infos = styled.div`
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 4px;
+  right: 4px;
 `
 
 export const Tag = styled.span`
+  font-family: Roboto;
+  font-size: 12px;
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 4px;
+  right: 4px;
   background-color: ${colors.salmon_light};
   color: ${colors.white};
-  padding: 4px 8px;
-  border-radius: 4px;
+  padding: 4px 4px;
+  border-radius: 0px;
 `

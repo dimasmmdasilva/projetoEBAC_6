@@ -1,79 +1,35 @@
+// Perfil.tsx
+import React, { useEffect, useState } from 'react'
 import Banner from '../../components/Banner'
 import Footer from '../../components/Footer'
-import Options from '../../models/Options'
-import pizzaefood from '../../assets/images/pizzaefood.jpg'
-import { PerfilList } from '../../components/PerfilProductsList'
 import PerfilHeader from '../../components/PerfilHeader'
+import PerfilList from '../../components/PerfilProductsList'
+import { useParams } from 'react-router-dom'
+import { Restaurant } from '../../pages/Home'
 
-const menu: Options[] = [
-  {
-    id: 1,
-    title: 'Pizza Marguerita',
-    category: '',
-    description:
-      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    infos: ['Destaque'],
-    image: pizzaefood,
-    grade: '4.5'
-  },
-  {
-    id: 1,
-    title: 'Pizza Marguerita',
-    category: '',
-    description:
-      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    infos: ['Destaque'],
-    image: pizzaefood,
-    grade: '4.5'
-  },
-  {
-    id: 1,
-    title: 'Pizza Marguerita',
-    category: '',
-    description:
-      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    infos: ['Destaque'],
-    image: pizzaefood,
-    grade: '4.5'
-  },
-  {
-    id: 1,
-    title: 'Pizza Marguerita',
-    category: '',
-    description:
-      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    infos: ['Destaque'],
-    image: pizzaefood,
-    grade: '4.5'
-  },
-  {
-    id: 1,
-    title: 'Pizza Marguerita',
-    category: '',
-    description:
-      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    infos: ['Destaque'],
-    image: pizzaefood,
-    grade: '4.5'
-  },
-  {
-    id: 1,
-    title: 'Pizza Marguerita',
-    category: '',
-    description:
-      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    infos: ['Destaque'],
-    image: pizzaefood,
-    grade: '4.5'
-  }
-]
+const Perfil = () => {
+  const { id } = useParams<{ id: string }>()
+  const [restaurant, setRestaurant] = useState<Restaurant | null>(null)
 
-export const Perfil = () => {
+  useEffect(() => {
+    if (!id) return
+    fetch(`https://fake-api-tau.vercel.app/api/efood/restaurantes/${id}`)
+      .then((res) => res.json())
+      .then((data) => setRestaurant(data))
+      .catch((error) => console.error('Erro ao buscar os dados:', error))
+  }, [id])
+
+  if (!restaurant) return null
+
   return (
     <>
       <PerfilHeader />
-      <Banner />
-      <PerfilList options={menu} />
+      <Banner
+        capa={restaurant.capa}
+        tipo={restaurant.tipo}
+        titulo={restaurant.titulo}
+      />
+      <PerfilList restaurant={restaurant} />
       <Footer />
     </>
   )

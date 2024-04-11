@@ -1,28 +1,30 @@
-import GalleryItem from '../Gallery'
-import { PerfilButtonCard, PerfilButtonContainer } from '../PerfilButton/styles'
-import { Card, Title, Description } from './styles'
+// PerfilProduct.tsx
+import React from 'react'
+import { Card, Title, Description, Infos, Tag, Image } from './styles'
 
-type Props = {
-  title: string
-  description: string
-  image: string
-  category: string
-  infos: string[]
+type PerfilProductProps = {
+  nome: string
+  descricao: string
+  preco: number
+  porcao: string
+  foto: string
+  avaliacao: number
 }
 
-export const PerfilProduct = ({ title, description, image }: Props) => (
-  <>
-    <Card>
-      <GalleryItem items={[{ type: 'image', url: image }]} />
-      <Title>{title}</Title>
-      <Description>{description}</Description>
-      <PerfilButtonContainer>
-        <PerfilButtonCard title="Adicionar">
-          Adicionar ao carrinho
-        </PerfilButtonCard>
-      </PerfilButtonContainer>
-    </Card>
-  </>
+const PerfilProduct: React.FC<PerfilProductProps> = ({
+  nome,
+  descricao,
+  porcao,
+  foto
+}: PerfilProductProps) => (
+  <Card>
+    <Image src={foto} alt={nome} />
+    <Title>{nome}</Title>
+    <Description>{descricao}</Description>
+    <Infos>
+      <Tag>serve {porcao}</Tag>
+    </Infos>
+  </Card>
 )
 
 export default PerfilProduct

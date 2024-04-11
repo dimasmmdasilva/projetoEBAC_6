@@ -1,24 +1,26 @@
-import Options from '../../models/Options'
+// ProductsList/index.tsx
+import React from 'react'
 import Product from '../Product'
-
 import { Container, List } from './styles'
+import { Restaurant } from '../../pages/Home'
 
-export type Props = {
-  options: Options[]
+interface ProductsListProps {
+  restaurants: Restaurant[]
 }
 
-export const ProductsList = ({ options }: Props) => (
+const ProductsList: React.FC<ProductsListProps> = ({ restaurants }) => (
   <Container>
     <List>
-      {options.map((option) => (
+      {restaurants.map((restaurant) => (
         <Product
-          key={option.id}
-          title={option.title}
-          category={option.category}
-          image={option.image}
-          description={option.description}
-          infos={option.infos}
-          grade={option.grade}
+          key={restaurant.id}
+          id={restaurant.id}
+          nome={restaurant.titulo}
+          descricao={restaurant.descricao}
+          foto={restaurant.capa}
+          avaliacao={restaurant.avaliacao}
+          tipo={restaurant.tipo}
+          destacado={restaurant.destacado}
         />
       ))}
     </List>

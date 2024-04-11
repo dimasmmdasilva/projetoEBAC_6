@@ -1,21 +1,22 @@
 import { PerfilButtonCard } from './styles'
 
 type Props = {
-  type: 'button' | 'link'
-  title: string
-  to?: string
   onClick?: () => void
+  openModal: () => void // Adicionando prop openModal
   children: string
 }
 
-export const PerfilButton = ({ type, title, onClick, children }: Props) => {
-  if (type === 'button') {
-    return (
-      <PerfilButtonCard type="button" title={title} onClick={onClick}>
-        {children}
-      </PerfilButtonCard>
-    )
+export const PerfilButton = ({ onClick, openModal, children }: Props) => {
+  const handleClick = () => {
+    openModal() // Chamar a função openModal ao clicar no botão
+    if (onClick) onClick() // Executar a função onClick, se existir
   }
+
+  return (
+    <PerfilButtonCard type="button" onClick={handleClick}>
+      {children}
+    </PerfilButtonCard>
+  )
 }
 
 export default PerfilButton

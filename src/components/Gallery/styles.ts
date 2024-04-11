@@ -56,7 +56,6 @@ export const Modal = styled.div`
   }
 `
 export const ModalContent = styled.div`
-  max-width: 960px;
   position: relative;
   z-index: 1;
 
@@ -66,17 +65,19 @@ export const ModalContent = styled.div`
     margin-bottom: 24px;
   }
 
-  img {
-    display: block;
-    max-width: 100%;
-  }
-
   .close {
     position: absolute;
     top: 0px;
     right: 0px;
     cursor: pointer;
+    display: block;
+    max-width: 100%;
   }
+`
+
+export const ImgModal = styled.img`
+  width: 100%;
+  height: 100%;
 `
 
 export const ZoomEffect = styled.div`

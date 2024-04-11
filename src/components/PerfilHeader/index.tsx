@@ -5,7 +5,7 @@ import fundo from '../../assets/images/fundo.png'
 const PerfilHeader = () => (
   <PerfilHeaderBar style={{ backgroundImage: `url(${fundo})` }}>
     <h3>Home</h3>
-    <LogoImage src={logo} alt="CHEF" />
+    <LogoImage src={logo} alt="efood" />
     <h3>Carrinho ( 0 )</h3>
   </PerfilHeaderBar>
 )

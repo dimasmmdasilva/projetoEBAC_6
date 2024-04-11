@@ -3,6 +3,7 @@ import {
   Action,
   ImageCard,
   ImageMenu,
+  ImgModal,
   Modal,
   ModalContent,
   ZoomEffect,
@@ -60,7 +61,7 @@ const GalleryItem = ({ items }: Props) => {
                 onClick={closeModal}
               />
             </header>
-            <img src={modal.url} />
+            <ImgModal src={modal.url} />
           </ModalContent>
         </Modal>
       )}

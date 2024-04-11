@@ -1,11 +1,18 @@
+// Banner.tsx
+import React from 'react'
 import { BackgroundImage, TitleImage, TitleRestaurant } from './styles'
-import italian from '../../assets/images/italian_banner.jpg'
 
-const Banner = () => (
-  <BackgroundImage style={{ backgroundImage: `url(${italian})` }}>
+interface BannerProps {
+  capa: string
+  tipo: string
+  titulo: string
+}
+
+const Banner: React.FC<BannerProps> = ({ capa, tipo, titulo }) => (
+  <BackgroundImage style={{ backgroundImage: `url(${capa})` }}>
     <div className="container">
-      <TitleImage>Italiana</TitleImage>
-      <TitleRestaurant>La Dolce Vita Trattoria</TitleRestaurant>
+      <TitleImage>{tipo}</TitleImage>
+      <TitleRestaurant>{titulo}</TitleRestaurant>
     </div>
   </BackgroundImage>
 )
