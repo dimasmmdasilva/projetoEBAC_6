@@ -20,24 +20,24 @@ export const Card = styled.div`
 export const Title = styled.h4`
   color: ${colors.beige_dark};
   font-weight: bold;
-  margin-top: -8px;
-  margin-bottom: 0px;
+  margin-top: 2px;
+  margin-bottom: 2px;
   font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 900;
-  line-height: 18.75px;
+  line-height: 14px;
   text-align: left;
 `
 
 export const Description = styled.p`
   color: ${colors.beige_dark};
-  margin-top: -12px;
-  margin-bottom: 4px;
+  margin-top: 2px;
+  margin-bottom: 2px;
   font-family: 'Roboto', sans-serif;
-  width: 300px;
-  font-size: 11px;
+  width: 310px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 16px;
   text-align: left;
 `
 

@@ -41,6 +41,7 @@ export const TitleImage = styled.h3`
   font-weight: 100;
   line-height: 37.5px;
   text-align: left;
+  margin-left: 4px;
   top: 0;
 `
 export const TitleRestaurant = styled.h2`
@@ -51,5 +52,6 @@ export const TitleRestaurant = styled.h2`
   font-weight: 900;
   line-height: 37.5px;
   text-align: left;
+  margin-left: 4px;
   bottom: 0;
 `

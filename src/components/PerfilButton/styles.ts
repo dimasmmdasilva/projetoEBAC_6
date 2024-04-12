@@ -1,3 +1,4 @@
+// PerfilButton/styles.ts
 import styled from 'styled-components'
 import { colors } from '../../styles'
 
@@ -11,7 +12,7 @@ export const PerfilButtonCard = styled.button`
   color: ${colors.salmon_light};
   background-color: ${colors.beige_dark};
   font-family: 'Roboto', sans-serif;
-  padding: 4px;
+  padding: 0px;
   height: 24px;
   width: 316px;
   text-decoration: none;

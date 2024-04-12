@@ -1,8 +1,11 @@
 // PerfilProduct.tsx
-import React from 'react'
-import { Card, Title, Description, Infos, Image } from './styles'
+import React, { useState } from 'react'
+import { Card, Title, Description, Infos } from './styles'
+import GalleryItem from '../Gallery'
+import { PerfilButton } from '../PerfilButton'
+import Modal from '../Modal'
 
-type PerfilProductProps = {
+export type PerfilProductProps = {
   nome: string
   descricao: string
   preco: number
@@ -14,14 +17,41 @@ type PerfilProductProps = {
 const PerfilProduct: React.FC<PerfilProductProps> = ({
   nome,
   descricao,
-  foto
-}: PerfilProductProps) => (
-  <Card>
-    <Image src={foto} alt={nome} />
-    <Title>{nome}</Title>
-    <Description>{descricao}</Description>
-    <Infos></Infos>
-  </Card>
-)
+  preco,
+  foto,
+  porcao
+}: PerfilProductProps) => {
+  const items = [{ type: 'image', url: foto }]
+  const [modalOpen, setModalOpen] = useState(false)
+
+  const openModal = () => {
+    setModalOpen(true)
+  }
+
+  const closeModal = () => {
+    setModalOpen(false)
+  }
+
+  return (
+    <Card>
+      <GalleryItem items={items as GalleryItem[]} />
+      <Title>{nome}</Title>
+      <Description>{descricao}</Description>
+      <Infos>
+        <PerfilButton openModal={openModal}>Saiba mais</PerfilButton>
+      </Infos>
+      {modalOpen && (
+        <Modal
+          closeModal={closeModal}
+          price={preco}
+          imageUrl={foto}
+          title={nome}
+          description={descricao}
+          porcao={porcao}
+        />
+      )}
+    </Card>
+  )
+}
 
 export default PerfilProduct

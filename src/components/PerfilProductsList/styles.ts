@@ -14,6 +14,6 @@ export const List = styled.ul`
     3,
     320px
   ); /* Define 3 colunas com largura fixa de 320px */
-  gap: 48px;
+  gap: 46px;
   justify-content: center;
 `

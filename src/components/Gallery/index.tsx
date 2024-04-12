@@ -1,5 +1,5 @@
 // Gallery/index.tsx
-import { useState } from 'react'
+import React, { useState } from 'react'
 import {
   Action,
   ImageCard,
@@ -11,7 +11,7 @@ import {
   ZoomImage
 } from './styles'
 import zoom from '../../assets/images/zoom.png'
-import close from '../../assets/images/fechar.png'
+import close from '../../assets/images/fechar.png' // Importando a imagem de fechar
 
 interface GalleryItem {
   type: 'image'
@@ -22,7 +22,7 @@ type Props = {
   items: GalleryItem[]
 }
 
-const GalleryItem = ({ items }: Props) => {
+const GalleryItem: React.FC<Props> = ({ items }) => {
   const [modal, setModal] = useState<{ isVisible: boolean; url: string }>({
     isVisible: false,
     url: ''
@@ -41,7 +41,7 @@ const GalleryItem = ({ items }: Props) => {
       <ImageMenu>
         {items.map((media, index) => (
           <ImageCard key={index} onClick={() => openModal(media.url)}>
-            <img src={media.url} />
+            <img src={media.url} alt={`Imagem ${index}`} />{' '}
             <Action>
               <ZoomEffect>
                 <ZoomImage src={zoom} alt="Clique para ampliar" />

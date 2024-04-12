@@ -1,3 +1,5 @@
+// PerfilHeader/styles.ts
+// PerfilHeader/styles.ts
 import styled from 'styled-components'
 import { colors } from '../../styles'
 
@@ -15,10 +17,28 @@ export const PerfilHeaderBar = styled.header`
   line-height: 21.09px;
   text-align: center;
 `
+
 export const LogoImage = styled.img`
   width: 100px;
-  margin-top: 24px;
-  margin-bottom: 24px;
-  margin-right: 25%;
-  margin-left: 25%;
+  margin-left: auto;
+  margin-right: auto;
+`
+
+export const HeaderContainer = styled.div`
+  max-width: 1024px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+`
+
+export const HeaderText = styled.h3`
+  text-align: left;
+  margin-left: 6px;
+`
+
+export const Cart = styled.h3`
+  text-align: right;
+  margin-left: 6px;
 `
