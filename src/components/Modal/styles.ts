@@ -18,8 +18,8 @@ export const Overlay = styled.div`
 export const ModalContent = styled.div`
   width: 1026px;
   height: 344px;
+  padding: 0;
   background-color: ${colors.salmon_light};
-  padding: 20px;
   margin-left: 7px;
   border-radius: 0px;
   position: relative;
@@ -36,48 +36,53 @@ export const CloseButton = styled.button`
   border: none;
   cursor: pointer;
   img {
-    width: 15px;
+    width: 16px;
     height: auto;
   }
 `
 
 export const ModalImage = styled.div`
-  width: 50%;
-  height: 100%;
+  width: 40%;
+  padding: 24px;
   img {
-    width: 85%;
-    height: 340px;
+    width: 280px;
+    height: 280px;
     border-radius: 0px;
   }
 `
 
 export const ProductInfo = styled.div`
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: flex-start;
   font-family: 'Roboto', sans-serif;
   color: ${colors.white};
-  height: 100%;
-  margin-left: -50px;
+  margin-left: -130px;
+
+  h3 {
+    margin-top: -90px;
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
 `
 
 export const AddToCartButton = styled.button`
-  background-color: ${colors.white};
+  background-color: ${colors.beige_dark};
   color: ${colors.salmon_light};
-  border: 2px solid ${colors.salmon_light};
+  border: 2px solid ${colors.beige_dark};
   font-family: 'Roboto', sans-serif;
   border-radius: 0px;
-  padding: 8px;
+  padding: 4px;
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
-  align-self: flex-start;
   font-weight: 700;
   line-height: 16.41px;
   text-align: center;
-  margin-bottom: 4px;
 
   &:hover {
     background-color: ${colors.salmon_light};

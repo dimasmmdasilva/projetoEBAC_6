@@ -8,15 +8,15 @@ import {
   ProductInfo,
   AddToCartButton
 } from './styles'
-import close from '../../assets/images/fechar.png' // Importando a imagem de fechar
+import close from '../../assets/images/fechar.png'
 import { Container } from '../../styles'
 
 type Props = {
   closeModal: () => void
-  price: number // Adicionando a propriedade price
-  imageUrl: string // Adicionando a propriedade imageUrl
-  title: string // Adicionando a propriedade title
-  description: string // Adicionando a propriedade description
+  price: number
+  imageUrl: string
+  title: string
+  description: string
   porcao: string
 }
 
@@ -46,13 +46,11 @@ const Modal: React.FC<Props> = ({
             <img src={imageUrl} alt="Imagem" />
           </ModalImage>
           <ProductInfo>
-            <div>
-              <h3>{title}</h3>
-              <p>{description}</p>
-              <p>serve {porcao}</p>
-            </div>
+            <h3>{title}</h3>
+            <p>{description}</p>
+            <p>Serve: {porcao}</p>
             <AddToCartButton>
-              Adicionar ao carrinho ({formataPreco(price)})
+              Adicionar ao carrinho - {formataPreco(price)}
             </AddToCartButton>
           </ProductInfo>
         </ModalContent>
