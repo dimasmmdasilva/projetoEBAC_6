@@ -79,8 +79,10 @@ export const AddToCartButton = styled.button`
   font-weight: bold;
   cursor: pointer;
   font-weight: 700;
-  line-height: 16.41px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
     background-color: ${colors.salmon_light};
