@@ -38,7 +38,7 @@ const PerfilProduct: React.FC<PerfilProductProps> = ({
       <Title>{nome}</Title>
       <Description>{descricao}</Description>
       <Infos>
-        <PerfilButton openModal={openModal}>Adicionar ao carrinho</PerfilButton>
+        <PerfilButton openModal={openModal}>Mais detalhes</PerfilButton>
       </Infos>
       {modalOpen && (
         <Modal
