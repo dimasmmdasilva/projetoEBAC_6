@@ -59,9 +59,9 @@ export const ProductInfo = styled.div`
   font-family: 'Roboto', sans-serif;
   color: ${colors.white};
   margin-left: -130px;
+  margin-top: -120px;
 
   h3 {
-    margin-top: -90px;
     font-size: 18px;
   }
 
@@ -77,6 +77,8 @@ export const AddToCartButton = styled.button`
   font-family: 'Roboto', sans-serif;
   border-radius: 0px;
   padding: 4px;
+  height: 24px;
+  width: 218px;
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
