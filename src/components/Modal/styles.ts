@@ -25,7 +25,6 @@ export const ModalContent = styled.div`
   position: relative;
   z-index: 1000;
   display: flex;
-  align-items: center;
 `
 
 export const CloseButton = styled.button`
@@ -42,8 +41,8 @@ export const CloseButton = styled.button`
 `
 
 export const ModalImage = styled.div`
-  width: 40%;
-  padding: 24px;
+  padding: 32px;
+
   img {
     width: 280px;
     height: 280px;
@@ -52,14 +51,11 @@ export const ModalImage = styled.div`
 `
 
 export const ProductInfo = styled.div`
-  width: 60%;
+  margin-top: 16px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   font-family: 'Roboto', sans-serif;
   color: ${colors.white};
-  margin-left: -130px;
-  margin-top: -120px;
 
   h3 {
     font-size: 18px;
