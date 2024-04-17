@@ -1,5 +1,4 @@
 // PerfilHeader/styles.ts
-// PerfilHeader/styles.ts
 import styled from 'styled-components'
 import { colors } from '../../styles'
 
@@ -38,7 +37,7 @@ export const HeaderText = styled.h3`
   margin-left: 6px;
 `
 
-export const Cart = styled.h3`
+export const CartButton = styled.button`
   text-align: right;
   margin-left: 6px;
 `

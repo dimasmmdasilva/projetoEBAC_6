@@ -40,7 +40,7 @@ const Product: React.FC<ProductProps> = ({
       <ButtonContainer>
         <ButtonLink
           type="link"
-          to={`/perfil/${id}`} // Aqui estou passando o ID para a URL do perfil
+          to={`/perfil/${id}`}
           title="Clique para saber mais"
         >
           Saiba mais

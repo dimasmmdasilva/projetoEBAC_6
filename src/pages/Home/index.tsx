@@ -1,8 +1,9 @@
 // Home/index.tsx
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import ProductsList from '../../components/ProductsList'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import { useGetFeaturedMenuQuery } from '../../services/api'
 
 export interface Restaurant {
   id: string
@@ -25,14 +26,16 @@ export interface MenuItem {
 }
 
 const Home: React.FC = () => {
-  const [restaurants, setRestaurants] = useState<Restaurant[]>([])
+  const { data: restaurants = [], error, isLoading } = useGetFeaturedMenuQuery()
 
-  useEffect(() => {
-    fetch('https://fake-api-tau.vercel.app/api/efood/restaurantes')
-      .then((res) => res.json())
-      .then((data) => setRestaurants(data))
-      .catch((error) => console.error('Erro ao buscar os dados:', error))
-  }, [])
+  if (isLoading) return <div>Loading...</div>
+  if (error) {
+    if ('message' in error) {
+      return <div>Error: {error.message}</div>
+    } else {
+      return <div>Error: Unknown error</div>
+    }
+  }
 
   return (
     <>
