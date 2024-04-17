@@ -2,6 +2,7 @@
 import styled from 'styled-components'
 import { colors } from '../../styles'
 import lixeira from '../../assets/images/lixeira.png'
+import close from '../../assets/images/fechar.png'
 
 export const Overlay = styled.div`
   position: fixed;
@@ -27,16 +28,31 @@ export const CartContainer = styled.div<{ isOpen: boolean }>`
 
 export const Sidebar = styled.aside`
   padding: 40px 16px 0 16px;
+  color: ${colors.salmon_light};
+  font-family: 'Roboto', sans-serif;
 
   ul {
     list-style: none;
     padding: 0;
+    margin-top: -32px;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 21.09px;
+    text-align: center;
+
   }
 
   p {
-    font-weight: bold;
-    font-size: 14px;
     margin-bottom: 24px;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+
 
     span {
       display: block;
@@ -45,13 +61,25 @@ export const Sidebar = styled.aside`
   }
 
   button {
-    background-color: transparent;
-    color: ${colors.white};
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
+    border: 2px solid ${colors.beige_light};
+    background-color: ${colors.beige_dark};
+    color: ${colors.salmon_light};
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    height: 24px;
+    width: 344px;
+    text-decoration: none;
     cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.41px;
+    text-align: center;
+    margin-left: -10px;
+
+  &:hover {
+    background-color: ${colors.salmon_light};
+    border: 2px solid ${colors.white};
+    color: ${colors.white};
   }
 `
 
@@ -62,6 +90,7 @@ export const CartItem = styled.li`
   margin-bottom: 20px;
   width: 344px;
   height: 100px;
+  margin-left: -10px;
   background-color: ${colors.beige_dark};
 
   img {
@@ -69,29 +98,49 @@ export const CartItem = styled.li`
     width: 80px;
     object-fit: cover;
     margin-right: 10px;
+    padding: 8px;
   }
 
   h3 {
     font-weight: bold;
     font-size: 14px;
+    margin-top: -28px;
+    margin-left: -10px;
   }
 
   p {
     font-size: 14px;
     margin: 0;
+    margin-left: -10px;
   }
 
   button {
     background-image: url(${lixeira});
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     background-repeat: no-repeat;
     background-size: contain;
     border: none;
     background-color: transparent;
     cursor: pointer;
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
+    margin-right: 4px;
+    margin-bottom: 4px;
+
+    &:hover {
+      background-image: url(${close});
   }
+`
+
+export const ValorTotal = styled.p`
+  margin: 0;
+  margin-left: -10px;
+  color: ${colors.beige_dark};
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16.41px;
+  text-align: center;
 `

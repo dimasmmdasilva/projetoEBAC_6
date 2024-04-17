@@ -9,6 +9,7 @@ import {
   ProductInfo,
   AddToCartButton
 } from './styles'
+import closeImg from '../../assets/images/fechar.png'
 
 type Props = {
   price: number
@@ -47,7 +48,9 @@ const Modal: React.FC<Props> = ({
   return (
     <Overlay>
       <ModalContent>
-        <CloseButton onClick={closeModal}>X</CloseButton>
+        <CloseButton onClick={closeModal}>
+          <img src={closeImg} alt="Fechar" />
+        </CloseButton>
         <ModalImage>
           <img src={imageUrl} alt="Imagem" />
         </ModalImage>
