@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { Card, Title, Description, Infos } from './styles'
 import GalleryItem from '../Gallery'
-import { PerfilButton } from '../PerfilButton'
+import PerfilButton from '../PerfilButton'
 import Modal from '../Modal'
 
 export type PerfilProductProps = {

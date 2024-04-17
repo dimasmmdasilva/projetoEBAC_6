@@ -1,6 +1,6 @@
-// PerfilHeader/styles.ts
 import styled from 'styled-components'
 import { colors } from '../../styles'
+import { Link } from 'react-router-dom' // Importe o Link
 
 export const PerfilHeaderBar = styled.header`
   background-color: ${colors.beige_dark};
@@ -32,12 +32,13 @@ export const HeaderContainer = styled.div`
   padding: 0 16px;
 `
 
-export const HeaderText = styled.h3`
-  text-align: left;
-  margin-left: 6px;
-`
-
 export const CartButton = styled.button`
   text-align: right;
   margin-left: 6px;
+`
+
+export const HomeLink = styled(Link)`
+  color: ${colors.salmon_light};
+  text-decoration: none;
+  font-weight: bold;
 `

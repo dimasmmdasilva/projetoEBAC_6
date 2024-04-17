@@ -1,13 +1,13 @@
-// PerfilHeader/index.tsx
 import { useDispatch } from 'react-redux'
 import { open } from '../../store/reducers/cart'
 import {
   PerfilHeaderBar,
   LogoImage,
-  HeaderText,
+  HeaderContainer,
   CartButton,
-  HeaderContainer
-} from './styles'
+  HomeLink
+} from './styles' // Importe o HomeLink
+
 import carrinho from '../../assets/images/carrinho.svg'
 import logo from '../../assets/images/logo.png'
 import fundo from '../../assets/images/fundo.png'
@@ -22,7 +22,8 @@ const PerfilHeader = () => {
   return (
     <PerfilHeaderBar style={{ backgroundImage: `url(${fundo})` }}>
       <HeaderContainer>
-        <HeaderText>Home</HeaderText>
+        {/* Substitua o texto "Home" pelo componente HomeLink */}
+        <HomeLink to="/">Home</HomeLink>
         <LogoImage src={logo} alt="efood" />
         <CartButton onClick={openCart}>
           Carrinho ( 0 ) <img src={carrinho} alt="Carrinho" />

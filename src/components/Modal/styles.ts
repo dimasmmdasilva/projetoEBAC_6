@@ -20,7 +20,7 @@ export const ModalContent = styled.div`
   height: 344px;
   padding: 0;
   background-color: ${colors.salmon_light};
-  margin-left: 7px;
+  margin-left: 16px;
   border-radius: 0px;
   position: relative;
   z-index: 1000;

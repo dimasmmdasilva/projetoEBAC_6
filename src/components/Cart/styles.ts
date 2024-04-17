@@ -4,7 +4,7 @@ import { colors } from '../../styles'
 import lixeira from '../../assets/images/lixeira.png'
 
 export const Overlay = styled.div`
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;

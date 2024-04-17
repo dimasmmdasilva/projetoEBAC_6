@@ -1,5 +1,6 @@
-// Modal/index.tsx
 import React from 'react'
+import { useDispatch } from 'react-redux'
+import { add, open as openCart } from '../../store/reducers/cart'
 import {
   Overlay,
   ModalContent,
@@ -8,53 +9,61 @@ import {
   ProductInfo,
   AddToCartButton
 } from './styles'
-import close from '../../assets/images/fechar.png'
-import { Container } from '../../styles'
 
 type Props = {
-  closeModal: () => void
   price: number
   imageUrl: string
   title: string
   description: string
   porcao: string
-}
-
-const formataPreco = (preco: number) => {
-  return new Intl.NumberFormat('pt-BR', {
-    style: 'currency',
-    currency: 'BRL'
-  }).format(preco)
+  closeModal: () => void // Adicione a função closeModal
 }
 
 const Modal: React.FC<Props> = ({
-  closeModal,
   price,
   imageUrl,
   title,
   description,
-  porcao
+  porcao,
+  closeModal // Receba a função closeModal como prop
 }) => {
+  const dispatch = useDispatch()
+
+  const addToCart = () => {
+    dispatch(
+      add({
+        nome: title,
+        descricao: description,
+        preco: price,
+        foto: imageUrl,
+        porcao: porcao,
+        id: Date.now()
+      })
+    )
+    closeModal() // Feche o modal após adicionar o item
+    dispatch(openCart()) // Abra o carrinho após adicionar o item
+  }
+
   return (
-    <Overlay onClick={closeModal}>
-      <Container>
-        <ModalContent>
-          <CloseButton onClick={closeModal}>
-            <img src={close} alt="Fechar" className="close" />
-          </CloseButton>
-          <ModalImage>
-            <img src={imageUrl} alt="Imagem" />
-          </ModalImage>
-          <ProductInfo>
-            <h3>{title}</h3>
-            <p>{description}</p>
-            <p>Serve: {porcao}</p>
-            <AddToCartButton>
-              Adicionar ao carrinho - {formataPreco(price)}
-            </AddToCartButton>
-          </ProductInfo>
-        </ModalContent>
-      </Container>
+    <Overlay>
+      <ModalContent>
+        <CloseButton onClick={closeModal}>X</CloseButton>
+        <ModalImage>
+          <img src={imageUrl} alt="Imagem" />
+        </ModalImage>
+        <ProductInfo>
+          <h3>{title}</h3>
+          <p>{description}</p>
+          <p>Serve: {porcao}</p>
+          <AddToCartButton onClick={addToCart}>
+            Adicionar ao carrinho -{' '}
+            {new Intl.NumberFormat('pt-BR', {
+              style: 'currency',
+              currency: 'BRL'
+            }).format(price)}
+          </AddToCartButton>
+        </ProductInfo>
+      </ModalContent>
     </Overlay>
   )
 }
