@@ -52,12 +52,6 @@ export const Sidebar = styled.aside`
     font-weight: 400;
     line-height: 22px;
     text-align: left;
-
-
-    span {
-      display: block;
-      font-size: 12px;
-    }
   }
 
   button {
@@ -131,16 +125,26 @@ export const CartItem = styled.li`
 
     &:hover {
       background-image: url(${close});
+    }
+  }
+
+  &:first-child {
+    margin-top: 30px;
   }
 `
 
-export const ValorTotal = styled.p`
-  margin: 0;
-  margin-left: -10px;
+export const ValorTotal = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-left: -8px;
+  margin-bottom: -8px;
   color: ${colors.beige_dark};
   font-family: Roboto;
   font-size: 14px;
   font-weight: bold;
-  line-height: 16.41px;
-  text-align: center;
+`
+
+export const TotalPrice = styled.p`
+  margin: 0;
 `

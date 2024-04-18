@@ -3,7 +3,14 @@ import { useDispatch, useSelector } from 'react-redux'
 import { RootReducer } from '../../store'
 import { close } from '../../store/reducers/cart'
 import { remove } from '../../store/reducers/cart'
-import { CartContainer, CartItem, Overlay, Sidebar, ValorTotal } from './styles'
+import {
+  CartContainer,
+  CartItem,
+  Overlay,
+  Sidebar,
+  TotalPrice,
+  ValorTotal
+} from './styles'
 
 const Cart = () => {
   const { isOpen, items } = useSelector((state: RootReducer) => state.cart)
@@ -61,11 +68,13 @@ const Cart = () => {
             ))}
           </ul>
           <ValorTotal>
-            Valor total{' '}
-            {new Intl.NumberFormat('pt-BR', {
-              style: 'currency',
-              currency: 'BRL'
-            }).format(totalPrice)}
+            Valor total
+            <TotalPrice>
+              {new Intl.NumberFormat('pt-BR', {
+                style: 'currency',
+                currency: 'BRL'
+              }).format(totalPrice)}
+            </TotalPrice>
           </ValorTotal>
           <button>Continuar a compra</button>
         </Sidebar>
