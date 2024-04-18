@@ -26,7 +26,7 @@ const PerfilHeader = () => {
   return (
     <PerfilHeaderBar style={{ backgroundImage: `url(${fundo})` }}>
       <HeaderContainer>
-        <HomeLink to="/">Home</HomeLink>
+        <HomeLink to="/">Restaurantes</HomeLink>
         <LogoImage src={logo} alt="efood" />
         {/* Transforme o CartButton em um texto clicável */}
         <CartButton onClick={openCart}>

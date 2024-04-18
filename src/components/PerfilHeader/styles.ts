@@ -20,8 +20,7 @@ export const PerfilHeaderBar = styled.header`
 
 export const LogoImage = styled.img`
   width: 100px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 80px;
 `
 
 export const HeaderContainer = styled.div`
@@ -36,11 +35,10 @@ export const HeaderContainer = styled.div`
 export const CartButton = styled.span`
   cursor: pointer; /* Adicione este estilo para indicar que é clicável */
   text-align: right;
-  margin-left: 6px;
+  margin-right: -30px;
 `
 
 export const HomeLink = styled(Link)`
   color: ${colors.salmon_light};
   text-decoration: none;
-  font-weight: bold;
 `
