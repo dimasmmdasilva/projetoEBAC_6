@@ -1,6 +1,7 @@
+// PerfilHeader/styles.ts
 import styled from 'styled-components'
 import { colors } from '../../styles'
-import { Link } from 'react-router-dom' // Importe o Link
+import { Link } from 'react-router-dom'
 
 export const PerfilHeaderBar = styled.header`
   background-color: ${colors.beige_dark};
@@ -32,7 +33,8 @@ export const HeaderContainer = styled.div`
   padding: 0 16px;
 `
 
-export const CartButton = styled.button`
+export const CartButton = styled.span`
+  cursor: pointer; /* Adicione este estilo para indicar que é clicável */
   text-align: right;
   margin-left: 6px;
 `
