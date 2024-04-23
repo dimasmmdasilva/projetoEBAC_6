@@ -1,4 +1,5 @@
-import React from 'react'
+// Modal/index.tsx
+import React, { useRef, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { add, open as openCart } from '../../store/reducers/cart'
 import {
@@ -17,7 +18,7 @@ type Props = {
   title: string
   description: string
   porcao: string
-  closeModal: () => void // Adicione a função closeModal
+  closeModal: () => void
 }
 
 const Modal: React.FC<Props> = ({
@@ -26,9 +27,27 @@ const Modal: React.FC<Props> = ({
   title,
   description,
   porcao,
-  closeModal // Receba a função closeModal como prop
+  closeModal
 }) => {
   const dispatch = useDispatch()
+  const modalRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        modalRef.current &&
+        !modalRef.current.contains(event.target as Node)
+      ) {
+        closeModal()
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [closeModal, modalRef])
 
   const addToCart = () => {
     dispatch(
@@ -41,13 +60,13 @@ const Modal: React.FC<Props> = ({
         id: Date.now()
       })
     )
-    closeModal() // Feche o modal após adicionar o item
-    dispatch(openCart()) // Abra o carrinho após adicionar o item
+    closeModal()
+    dispatch(openCart())
   }
 
   return (
     <Overlay>
-      <ModalContent>
+      <ModalContent ref={modalRef}>
         <CloseButton onClick={closeModal}>
           <img src={closeImg} alt="Fechar" />
         </CloseButton>

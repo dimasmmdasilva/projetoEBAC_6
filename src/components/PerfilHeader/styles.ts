@@ -41,4 +41,7 @@ export const CartButton = styled.span`
 export const HomeLink = styled(Link)`
   color: ${colors.salmon_light};
   text-decoration: none;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 21.09px;
 `

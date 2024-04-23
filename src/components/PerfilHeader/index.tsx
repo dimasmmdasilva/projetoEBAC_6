@@ -28,9 +28,7 @@ const PerfilHeader = () => {
       <HeaderContainer>
         <HomeLink to="/">Restaurantes</HomeLink>
         <LogoImage src={logo} alt="efood" />
-        {/* Transforme o CartButton em um texto clicável */}
         <CartButton onClick={openCart}>
-          {/* Use a quantidade de itens do carrinho para exibir dinamicamente */}
           <span>
             {cartQuantity} produto(s) no carrinho{' '}
             <img src={carrinho} alt="Carrinho" />

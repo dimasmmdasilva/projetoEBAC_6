@@ -1,11 +1,11 @@
 // Perfil.tsx
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import { Restaurant } from '../../pages/Home'
 import Banner from '../../components/Banner'
 import Footer from '../../components/Footer'
 import PerfilHeader from '../../components/PerfilHeader'
 import PerfilList from '../../components/PerfilProductsList'
-import { useParams } from 'react-router-dom'
-import { Restaurant } from '../../pages/Home'
 
 const Perfil = () => {
   const { id } = useParams<{ id: string }>()

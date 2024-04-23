@@ -1,4 +1,5 @@
 // Cart/styles.ts
+
 import styled from 'styled-components'
 import { colors } from '../../styles'
 import lixeira from '../../assets/images/lixeira.png'
@@ -10,6 +11,7 @@ export const Overlay = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 999;
   background-color: rgba(0, 0, 0, 0.7);
 `
 
@@ -20,8 +22,8 @@ export const CartContainer = styled.div<{ isOpen: boolean }>`
   right: 0;
   bottom: 0;
   width: 360px;
+  z-index: 1000;
   background-color: ${colors.salmon_light};
-  z-index: 999;
   transition: transform 0.3s ease;
   transform: ${({ isOpen }) => (isOpen ? 'translateX(0)' : 'translateX(100%)')};
 `
@@ -84,7 +86,7 @@ export const CartItem = styled.li`
   margin-bottom: 20px;
   width: 344px;
   height: 100px;
-  margin-left: -10px;
+  margin-left: -8px;
   background-color: ${colors.beige_dark};
 
   img {

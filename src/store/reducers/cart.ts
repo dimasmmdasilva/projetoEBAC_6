@@ -1,4 +1,5 @@
 // store/reducers/cart.ts
+
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { MenuItem } from '../../pages/Home'
 
@@ -27,9 +28,13 @@ const cartSlice = createSlice({
     },
     close: (state) => {
       state.isOpen = false
+    },
+    clearCart: (state) => {
+      state.items = []
+      state.isOpen = false
     }
   }
 })
 
-export const { add, remove, open, close } = cartSlice.actions
+export const { add, remove, open, close, clearCart } = cartSlice.actions
 export default cartSlice.reducer
