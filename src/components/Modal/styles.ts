@@ -88,5 +88,6 @@ export const AddToCartButton = styled.button`
     background-color: ${colors.salmon_light};
     border: 2px solid ${colors.white};
     color: ${colors.white};
+    transition: background-color 0.3s;
   }
 `

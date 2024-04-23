@@ -14,6 +14,7 @@ export const PaymentContainer = styled.div`
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 700;
+  margin-top: -15px;
 `
 
 export const Heading = styled.h3`
@@ -65,9 +66,10 @@ export const FormButton = styled.button`
     background-color: ${colors.salmon_light};
     border: 2px solid ${colors.white};
     color: ${colors.white};
+    transition: background-color 0.3s;
   }
 `
 export const Row = styled.div`
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: -10px;
 `

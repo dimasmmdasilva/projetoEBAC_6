@@ -1,4 +1,5 @@
 // Home/index.tsx
+
 import React from 'react'
 import ProductsList from '../../components/ProductsList'
 import Header from '../../components/Header'

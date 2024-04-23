@@ -13,7 +13,7 @@ const Rotas = () => (
     <Route path="/perfil/:id" element={<Perfil />} />
     <Route path="/cart" element={<Cart />} />
     <Route path="/checkout" element={<Checkout />} />
-    <Route path="/payment" element={<Payment />} />
+    <Route path="/payment" element={<Payment items={[]} />} />
   </Routes>
 )
 

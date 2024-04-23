@@ -31,5 +31,6 @@ export const ButtonLink = styled(Link)`
     background-color: ${colors.white};
     border: 2px solid ${colors.salmon_soft};
     color: ${colors.salmon_light};
+    transition: background-color 0.3s;
   }
 `

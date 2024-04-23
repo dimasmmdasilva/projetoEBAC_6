@@ -1,4 +1,5 @@
-// Perfil.tsx
+// Perfil/index.tsx
+
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { Restaurant } from '../../pages/Home'

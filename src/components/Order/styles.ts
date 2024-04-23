@@ -19,7 +19,7 @@ export const OrderTitle = styled.h2`
   font-size: 16px;
   font-weight: 700;
   text-align: left;
-  margin-top: -5px;
+  margin-top: 5px;
   margin-bottom: -40px;
   margin-left: -8px;
 `
@@ -38,7 +38,7 @@ export const OrderText = styled.p`
 
 export const OrderButton = styled.button`
   background-color: ${colors.beige_dark};
-  color: white;
+  color: ${colors.white};
   border: none;
   padding: 10px 20px;
   border-radius: 0px;

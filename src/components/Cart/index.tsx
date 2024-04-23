@@ -4,7 +4,7 @@ import React, { useRef, useEffect, useCallback, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootReducer } from '../../store'
 import { close } from '../../store/reducers/cart'
-import { remove, clearCart } from '../../store/reducers/cart' // Adicionado
+import { remove, clearCart } from '../../store/reducers/cart'
 import Checkout from '../Checkout'
 import Payment from '../Payment'
 import Order from '../Order'
@@ -119,6 +119,7 @@ const Cart = () => {
             <Payment
               onBackToCheckout={() => setCartStep(CartStep.CHECKOUT)}
               onFinishPayment={handleFinishPayment}
+              items={items} // Passa a lista de itens como propriedade
             />
           )}
           {cartStep === CartStep.ORDER && (
