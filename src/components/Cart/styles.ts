@@ -36,7 +36,6 @@ export const Sidebar = styled.aside`
   ul {
     list-style: none;
     padding: 0;
-    margin-top: -32px;
   }
 
   h3 {
@@ -132,7 +131,7 @@ export const CartItem = styled.li`
   }
 
   &:first-child {
-    margin-top: 30px;
+    margin-top: 0px;
   }
 `
 

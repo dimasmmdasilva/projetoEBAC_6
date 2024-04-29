@@ -30,13 +30,13 @@ export const CheckoutForm = styled.form`
 `
 
 export const FormGroup = styled.div`
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   margin-left: -8px;
 `
 
 export const FormLabel = styled.label`
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
   font-size: 14px;
 `
 
@@ -75,6 +75,12 @@ export const Row = styled.div`
   margin-bottom: 10px;
 `
 
+export const ErrorMessage = styled.div`
+  font-size: 10px;
+  text-align: right;
+  color: ${colors.beige_dark};
+`
+
 export default {
   CheckoutContainer,
   CheckoutForm,
@@ -82,5 +88,6 @@ export default {
   FormLabel,
   FormInput,
   FormButton,
-  Row
+  Row,
+  ErrorMessage
 }

@@ -14,6 +14,7 @@
     "@types/styled-components": "^5.1.34",
     "@typescript-eslint/eslint-plugin": "^7.4.0",
     "@typescript-eslint/parser": "^7.4.0",
+    "axios": "^1.6.8",
     "editorconfig-cli": "^0.3.0",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
@@ -32,6 +33,7 @@
     "react-spinners": "^0.13.8",
     "styled-components": "^6.1.8",
     "typescript": "^4.9.5",
+    "uuid": "^9.0.1",
     "web-vitals": "^2.1.4",
     "yup": "^1.4.0"
   },
@@ -60,6 +62,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/uuid": "^9.0.8"
   }
 }

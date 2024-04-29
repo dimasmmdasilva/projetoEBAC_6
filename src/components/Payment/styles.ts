@@ -30,7 +30,7 @@ export const PaymentForm = styled.form`
 `
 
 export const FormGroup = styled.div`
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   margin-left: -8px;
 `
 
@@ -69,7 +69,25 @@ export const FormButton = styled.button`
     transition: background-color 0.3s;
   }
 `
+
 export const Row = styled.div`
   display: flex;
-  margin-bottom: -10px;
+  margin-bottom: 10px;
 `
+
+export const ErrorMessage = styled.div`
+  font-size: 10px;
+  text-align: right;
+  color: ${colors.beige_dark};
+`
+
+export default {
+  PaymentContainer,
+  PaymentForm,
+  FormGroup,
+  FormLabel,
+  FormInput,
+  FormButton,
+  Row,
+  ErrorMessage
+}

@@ -11,6 +11,7 @@ export const OrderContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: left;
+  margin-top: -16px;
 `
 
 export const OrderTitle = styled.h2`
