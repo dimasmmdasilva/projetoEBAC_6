@@ -1,3 +1,5 @@
+// Tag/index.tsx
+
 import { TagCards } from './styles'
 
 export type Props = {

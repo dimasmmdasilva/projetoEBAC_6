@@ -1,5 +1,7 @@
+// Footer/index.tsx
+
 import logo from '../../assets/images/logo.png'
-import FooterContainer, { FooterInfo, FooterLogo, Links } from './styles'
+import { FooterContainer, FooterInfo, FooterLogo, Links } from './styles'
 import instagram from '../../assets/images/instagram.png'
 import twitter from '../../assets/images/twitter.png'
 import facebook from '../../assets/images/facebook.png'

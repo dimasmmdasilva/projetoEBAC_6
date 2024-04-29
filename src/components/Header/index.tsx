@@ -1,3 +1,5 @@
+// Header/index.tsx
+
 import { HeaderBar, HeaderTitle, LogoImage } from './styles'
 import logo from '../../assets/images/logo.png'
 import fundo from '../../assets/images/fundo.png'

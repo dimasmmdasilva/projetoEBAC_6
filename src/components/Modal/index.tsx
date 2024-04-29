@@ -1,4 +1,5 @@
 // Modal/index.tsx
+
 import React, { useRef, useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { add, open as openCart } from '../../store/reducers/cart'

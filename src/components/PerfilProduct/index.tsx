@@ -1,4 +1,5 @@
-// PerfilProduct.tsx
+// PerfilProduct/index.tsx
+
 import React, { useState } from 'react'
 import { Card, Title, Description, Infos } from './styles'
 import GalleryItem from '../Gallery'

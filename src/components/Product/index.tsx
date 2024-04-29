@@ -1,4 +1,5 @@
-// Product.tsx
+// Product/index.tsx
+
 import React from 'react'
 import { CardContainer, Grade, InfoContainer, StarImage } from './styles'
 import { ButtonContainer, ButtonLink } from '../Button/styles'

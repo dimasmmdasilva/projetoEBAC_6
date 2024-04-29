@@ -1,4 +1,5 @@
-// Banner.tsx
+// Banner/index.tsx
+
 import React from 'react'
 import { BackgroundImage, TitleImage, TitleRestaurant } from './styles'
 import { Container } from '../../styles'

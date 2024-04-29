@@ -1,4 +1,5 @@
-// PerfilList.tsx
+// PerfilProductsList/index.tsx
+
 import React from 'react'
 import PerfilProduct from '../PerfilProduct'
 import { PerfilContainer, List } from './styles'
