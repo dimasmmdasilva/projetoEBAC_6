@@ -39,11 +39,26 @@ const Checkout: React.FC<CheckoutProps> = ({
       complement: ''
     },
     validationSchema: Yup.object({
-      recipient: Yup.string().required('Campo obrigatório'),
-      address: Yup.string().required('Campo obrigatório'),
-      city: Yup.string().required('Campo obrigatório'),
-      zip: Yup.string().required('Campo obrigatório'),
-      number: Yup.string().required('Campo obrigatório'),
+      recipient: Yup.string()
+        .required('Campo obrigatório')
+        .min(6, 'Escreva o nome completo'),
+      address: Yup.string()
+        .required('Campo obrigatório')
+        .min(6, 'Digite o nome da rua')
+        .matches(/^[a-zA-Z\s]*$/, 'Apenas letras são permitidas'),
+      city: Yup.string()
+        .required('Campo obrigatório')
+        .min(3, 'Digite o nome da cidade')
+        .matches(/^[a-zA-Z\s]*$/, 'Apenas letras são permitidas'),
+      zip: Yup.string()
+        .required('Campo obrigatório')
+        .matches(/^\d{5}-\d{3}$/, 'Digite o CEP assim 12345-678'),
+      number: Yup.string()
+        .required('Campo obrigatório')
+        .matches(
+          /^\d{1,6}$/,
+          'Apenas números são permitidos, máximo de 6 dígitos'
+        ),
       complement: Yup.string()
     }),
     onSubmit: (values) => {

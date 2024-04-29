@@ -42,19 +42,19 @@ const Payment: React.FC<PaymentProps> = ({
     validationSchema: Yup.object({
       cardName: Yup.string()
         .required('Campo obrigatório')
-        .matches(/^[A-Z\s]*$/, 'Apenas letras maiúsculas são permitidas'),
+        .matches(/^[A-Z\s]*$/, 'Apenas letras maiúsculas'),
       cardNumber: Yup.string()
         .required('Campo obrigatório')
-        .matches(/^\d{16}$/, 'Deve conter exatamente 16 números'),
+        .matches(/^\d{16}$/, 'Deve conter 16 números'),
       cvv: Yup.string()
         .required('Campo obrigatório')
-        .matches(/^\d{3}$/, 'Deve conter exatamente 3 números'),
+        .matches(/^\d{3}$/, 'Deve conter 3 números'),
       expiryMonth: Yup.string()
         .required('Campo obrigatório')
-        .matches(/^(0?[1-9]|1[0-2])$/, 'Deve ser um número de 1 a 12'),
+        .matches(/^(0?[1-9]|1[0-2])$/, 'Um número de 1 a 12'),
       expiryYear: Yup.string()
         .required('Campo obrigatório')
-        .matches(/^(202[4-9]|20[3-9]\d|\d{5,})$/, 'Deve ser a partir de 2024')
+        .matches(/^(202[4-9]|20[3-9]\d|\d{5,})$/, 'A partir de 2024')
     }),
     onSubmit: (values) => {
       dispatch(

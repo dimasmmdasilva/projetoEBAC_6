@@ -76,7 +76,7 @@ export const Row = styled.div`
 `
 
 export const ErrorMessage = styled.div`
-  font-size: 10px;
+  font-size: 8px;
   text-align: right;
   color: ${colors.beige_dark};
 `
