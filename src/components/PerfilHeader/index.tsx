@@ -9,7 +9,6 @@ import {
   CartButton,
   HomeLink
 } from './styles'
-import carrinho from '../../assets/images/carrinho.svg'
 import logo from '../../assets/images/logo.png'
 import fundo from '../../assets/images/fundo.png'
 import { RootReducer } from '../../store'
@@ -30,10 +29,7 @@ const PerfilHeader = () => {
         <HomeLink to="/">Restaurantes</HomeLink>
         <LogoImage src={logo} alt="efood" />
         <CartButton onClick={openCart}>
-          <span>
-            {cartQuantity} produto(s) no carrinho{' '}
-            <img src={carrinho} alt="Carrinho" />
-          </span>
+          <span>{cartQuantity} produto(s) no carrinho</span>
         </CartButton>
       </HeaderContainer>
     </PerfilHeaderBar>
