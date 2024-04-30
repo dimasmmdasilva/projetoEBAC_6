@@ -26,6 +26,15 @@ export const ModalContent = styled.div`
   position: relative;
   z-index: 1000;
   display: flex;
+
+  @media (max-width: 968px) {
+    width: 680px;
+  }
+
+  @media (max-width: 520px) {
+    width: 460px;
+    margin-left: 0px;
+  }
 `
 
 export const CloseButton = styled.button`
