@@ -8,6 +8,10 @@ export const CardContainer = styled.div`
   width: 472px;
   height: 398px;
   margin: 0 auto;
+
+  @media (max-width: 520px) {
+    width: 420px;
+  }
 `
 
 export const Img = styled.img`
@@ -24,6 +28,10 @@ export const CardInfo = styled.div`
   width: 471px;
   height: 181px;
   top: 217px;
+
+  @media (max-width: 520px) {
+    width: 419px;
+  }
 `
 
 export const InfoContainer = styled.div`

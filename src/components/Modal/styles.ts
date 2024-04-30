@@ -49,6 +49,17 @@ export const ModalImage = styled.div`
     height: 280px;
     border-radius: 0px;
   }
+
+  @media (max-width: 520px) {
+    padding: 16px;
+
+    img {
+      width: 180px;
+      height: 180px;
+      border-radius: 0px;
+      margin-top: 20px;
+    }
+  }
 `
 
 export const ProductInfo = styled.div`

@@ -17,4 +17,13 @@ export const List = styled.ul`
   margin-top: 70px;
   margin-bottom: 120px;
   justify-content: center;
+
+  @media (max-width: 968px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media (max-width: 520px) {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: -30px;
+  }
 `

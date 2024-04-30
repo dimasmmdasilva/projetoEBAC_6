@@ -22,6 +22,10 @@ export const PerfilHeaderBar = styled.header`
 export const LogoImage = styled.img`
   width: 100px;
   margin-left: 80px;
+
+  @media (max-width: 520px) {
+    margin-left: 40px;
+  }
 `
 
 export const HeaderContainer = styled.div`
@@ -37,6 +41,10 @@ export const CartButton = styled.span`
   cursor: pointer;
   text-align: right;
   margin-right: 0px;
+
+  @media (max-width: 520px) {
+    font-size: 14px;
+  }
 `
 
 export const HomeLink = styled(Link)`
@@ -45,4 +53,8 @@ export const HomeLink = styled(Link)`
   font-size: 18px;
   font-weight: 900;
   line-height: 21.09px;
+
+  @media (max-width: 520px) {
+    font-size: 14px;
+  }
 `

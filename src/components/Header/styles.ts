@@ -21,6 +21,18 @@ export const HeaderTitle = styled.h2`
   line-height: 42.19px;
   text-align: center;
   padding: 10px;
+
+  @media (max-width: 968px) {
+    font-size: 28px;
+    width: 450px;
+    line-height: 32px;
+  }
+
+  @media (max-width: 520px) {
+    font-size: 24px;
+    width: 300px;
+    line-height: 28px;
+  }
 `
 
 export const LogoImage = styled.img`

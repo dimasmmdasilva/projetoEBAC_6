@@ -8,6 +8,11 @@ export const ButtonContainer = styled.div`
   position: absolute;
   bottom: 12px;
   left: 8px;
+
+  @media (max-width: 520px) {
+    bottom: 8px;
+    left: 8px;
+  }
 `
 
 export const ButtonCard = styled.button`
@@ -34,5 +39,13 @@ export const ButtonLink = styled(Link)`
     border: 2px solid ${colors.salmon_soft};
     color: ${colors.salmon_light};
     transition: background-color 0.3s;
+  }
+
+  @media (max-width: 520px) {
+    width: 34px;
+    height: 12px;
+    padding: 3px;
+    font-size: 10px;
+    padding: 1px;
   }
 `
