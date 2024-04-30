@@ -10,22 +10,17 @@ export const HeaderBar = styled.header`
   align-items: center;
   flex-direction: column;
   padding: 20px;
-
-  @media screen and (max-width: 768px) {
-    padding: 10px;
-  }
 `
 
 export const HeaderTitle = styled.h2`
   color: ${colors.salmon_light};
-  font-size: 18px;
-  font-weight: 700;
+  font-family: Roboto;
+  width: 600px;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 42.19px;
   text-align: center;
   padding: 10px;
-
-  @media screen and (max-width: 768px) {
-    font-size: 16px;
-  }
 `
 
 export const LogoImage = styled.img`
@@ -33,8 +28,4 @@ export const LogoImage = styled.img`
   height: auto;
   margin-top: 20px;
   margin-bottom: 20px;
-
-  @media screen and (max-width: 768px) {
-    width: 80px;
-  }
 `
