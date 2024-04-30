@@ -34,9 +34,9 @@ export const HeaderContainer = styled.div`
 `
 
 export const CartButton = styled.span`
-  cursor: pointer; /* Adicione este estilo para indicar que é clicável */
+  cursor: pointer;
   text-align: right;
-  margin-right: -30px;
+  margin-right: 0px;
 `
 
 export const HomeLink = styled(Link)`
