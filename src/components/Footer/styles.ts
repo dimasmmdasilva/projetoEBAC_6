@@ -22,6 +22,10 @@ export const FooterLogo = styled.div`
   img {
     width: 100px;
   }
+
+  @media (max-width: 520px) {
+    margin-left: 0px;
+  }
 `
 
 export const Links = styled.ul`
@@ -33,6 +37,10 @@ export const Links = styled.ul`
     width: 24px;
     height: 24px;
     margin-right: 8px;
+  }
+
+  @media (max-width: 520px) {
+    margin-left: -27px;
   }
 `
 

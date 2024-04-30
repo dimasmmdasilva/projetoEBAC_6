@@ -24,6 +24,6 @@ export const List = styled.ul`
 
   @media (max-width: 520px) {
     grid-template-columns: repeat(1, 1fr);
-    margin-left: -30px;
+    margin-left: -35px;
   }
 `
