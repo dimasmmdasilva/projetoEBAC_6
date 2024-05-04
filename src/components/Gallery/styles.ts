@@ -80,6 +80,11 @@ export const ModalContent = styled.div`
 export const ImgModal = styled.img`
   max-width: 600px;
   max-height: 400px;
+
+  @media (max-width: 520px) {
+    width: 97%;
+    margin-left: 6px;
+  }
 `
 
 export const ZoomEffect = styled.div`
